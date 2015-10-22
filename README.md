@@ -9,7 +9,35 @@ At Shore we create our own builds of Bootstrap. We do this for several reasons:
 
 ## Simple theme testing
 
-Just execute `$ npm run test-server` to open the theme test page and start hacking the less files. The test-server will watch for files changes and autom. reloads the test page.
+Just execute `npm run test-server` to open the theme test page and start hacking the less files. The test-server will watch for files changes and autom. reloads the test page.
+
+## Usage
+
+Install via npm with
+
+```
+npm install @shore/bootstrap
+```
+
+and use the files from `dist` folder.
+
+## Build
+
+Make sure you executed `npm install` before
+
+```
+npm run build
+```
+
+## Publish on npm
+
+Increment the `shore.n` version in `package.json`, commit and push before
+
+```
+npm publish
+```
+
+You need to be logged in to npm with the `shore` user!
 
 <hr>
 
