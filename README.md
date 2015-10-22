@@ -7,10 +7,6 @@ At Shore we create our own builds of Bootstrap. We do this for several reasons:
 * add custom element styles
 * distribute as *npm* private module, so that we can easily use it in multiple projects to ensure a consistent brand experience
 
-## Simple theme testing
-
-Just execute `npm run test-server` to open the theme test page and start hacking the less files. The test-server will watch for files changes and autom. reloads the test page.
-
 ## Usage
 
 Install via npm with
@@ -20,6 +16,16 @@ npm install @shore/bootstrap
 ```
 
 and use the files from `dist` folder.
+
+## Simple theme testing
+
+Make sure you executed `npm install` before
+
+```
+npm run test-server
+```
+
+to open the theme test page and start hacking the less files. The test-server will watch for files changes and autom. reloads the test page.
 
 ## Build
 
