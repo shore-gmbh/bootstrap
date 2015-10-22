@@ -1,7 +1,7 @@
 {
   "name": "@shore/bootstrap",
   "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
-  "version": "3.3.5+shore1",
+  "version": "3.3.5-shore.1",
   "keywords": [
     "css",
     "less",
@@ -22,10 +22,10 @@
   "main": "./dist/js/npm",
   "repository": {
     "type": "git",
-    "url": "https://github.com/twbs/bootstrap.git"
+    "url": "https://github.com/shore-gmbh/bootstrap.git"
   },
   "bugs": {
-    "url": "https://github.com/twbs/bootstrap/issues"
+    "url": "https://github.com/shore-gmbh/bootstrap/issues"
   },
   "license": "MIT",
   "devDependencies": {
