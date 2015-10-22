@@ -1,3 +1,18 @@
+# THIS IS A CUSTOM VERSION OF BOOTSTRAP USED BY [SHORE](http://www.shore.com/)
+
+At Shore we create our own builds of Bootstrap. We do this for several reasons:
+
+* maintain our custom Shore theme
+* select only the features we need
+* add custom element styles
+* distribute as *npm* private module, so that we can easily use it in multiple projects to ensure a consistent brand experience
+
+## Simple theme testing
+
+Just execute `$ npm run test-server` to open the theme test page and start hacking the less files. The test-server will watch for files changes and autom. reloads the test page.
+
+<hr>
+
 # [Bootstrap](http://getbootstrap.com)
 [![Slack](https://bootstrap-slack.herokuapp.com/badge.svg)](https://bootstrap-slack.herokuapp.com)
 ![Bower version](https://img.shields.io/bower/v/bootstrap.svg)
