@@ -14,7 +14,8 @@
   "homepage": "http://getbootstrap.com",
   "author": "Twitter, Inc.",
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "test-server": "live-server --open=test.html"
   },
   "style": "dist/css/bootstrap.css",
   "less": "less/bootstrap.less",
@@ -53,6 +54,7 @@
     "grunt-jscs": "~1.8.0",
     "grunt-saucelabs": "~8.6.1",
     "grunt-sed": "twbs/grunt-sed#v0.2.0",
+    "live-server": "^0.8.2",
     "load-grunt-tasks": "~3.2.0",
     "markdown-it": "^4.2.1",
     "npm-shrinkwrap": "^200.4.0",
