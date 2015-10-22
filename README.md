@@ -17,9 +17,19 @@ npm install @shore/bootstrap
 
 and use the files from `dist` folder.
 
-## Simple theme testing
+## Development
 
-Make sure you executed `npm install` before
+Use the `shore-bootstrap3` branch as a basis. Do not commit your changes to `master`!
+
+Install the required npm packages from the project root via:
+
+```
+npm install
+```
+
+### Simple theme testing
+
+Execute
 
 ```
 npm run test-server
@@ -27,15 +37,13 @@ npm run test-server
 
 to open the theme test page and start hacking the less files. The test-server will watch for files changes and autom. reloads the test page.
 
-## Build
-
-Make sure you executed `npm install` before
+### Build
 
 ```
 npm run build
 ```
 
-## Publish on npm
+### Publish on npm
 
 Increment the `shore.n` version in `package.json`, commit and push before
 
