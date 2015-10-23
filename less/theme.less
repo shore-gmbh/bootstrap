@@ -184,3 +184,28 @@ strong {
   }
 }
 
+// nav tabs
+.nav-tabs {
+  border: none;
+  > li {
+    > a {
+      padding: 13px 30px;
+      border: none;
+      border-bottom: 1px solid @gray-line;
+    }
+    &.active > a {
+      &,
+      &:hover,
+      &:focus {
+        padding: 13px 30px 10px 30px;
+        border: none;
+        border-bottom: 4px solid @brand-primary;
+      }
+    }
+    &.disabled > a {
+      border: none;
+      border-bottom: 1px dotted @gray-line;
+    }
+  }
+}
+
