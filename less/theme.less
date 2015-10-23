@@ -60,3 +60,27 @@ strong {
   border-left: none;
 }
 
+// panel without border
+.panel {
+  border: none;
+}
+// custom box shadow for panels
+.panel {
+  .box-shadow(0 2px 6px rgba(0,0,0,.08));
+}
+// panel title with uppercase text and small font size
+.panel-title {
+  font-size: 11px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+// panel title text color of default panel with primary brand color
+.panel-default .panel-title {
+  color: @brand-primary;
+}
+// panel footer
+.panel-footer {
+  color: @gray-mute;
+  overflow: auto;
+}
+

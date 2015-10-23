@@ -12,8 +12,9 @@
 @gray-dark:              #3e4a54;
 @gray:                   #82888a; // from TEXT
 @gray-light:             #dedfe1;
-@gray-lighter:           #f5f5f5; // from BG
+@gray-lighter:           #fcfcfc; // from BG
 @gray-divisor:           #ededed;
+@gray-mute:              #b0b5bc;
 
 @brand-primary:          #47a3d1; // from DEFAULT
 @brand-secondary:        #616b78; // from PRIMARY
@@ -148,7 +149,7 @@
 
 @btn-default-color:              #333;
 @btn-default-bg:                 #fff;
-@btn-default-border:             #ccc;
+@btn-default-border:             @gray-divisor;
 
 @btn-primary-color:              #fff;
 @btn-primary-bg:                 @brand-primary;
@@ -706,20 +707,20 @@
 
 @panel-bg:                    #fff;
 @panel-body-padding:          15px;
-@panel-heading-padding:       10px 15px;
-@panel-footer-padding:        @panel-heading-padding;
-@panel-border-radius:         @border-radius-base;
+@panel-heading-padding:       15px;
+@panel-footer-padding:        10px 15px;
+@panel-border-radius:         0;
 
 //** Border color for elements within panels
-@panel-inner-border:          #ddd;
-@panel-footer-bg:             #f5f5f5;
+@panel-inner-border:          @gray-divisor;
+@panel-footer-bg:             @gray-lighter;
 
 @panel-default-text:          @gray-dark;
-@panel-default-border:        #ddd;
-@panel-default-heading-bg:    #f5f5f5;
+@panel-default-border:        @gray-divisor;
+@panel-default-heading-bg:    white;
 
 @panel-primary-text:          #fff;
-@panel-primary-border:        @brand-primary;
+@panel-primary-border:        transparent;
 @panel-primary-heading-bg:    @brand-primary;
 
 @panel-success-text:          @state-success-text;
