@@ -11,9 +11,15 @@
 @import "variables.less";
 @import "mixins.less";
 
-// font color h5 is an exception
+// font weight of h1 & h2 should be lighter
+h1, .h1,
+h2, .h2 {
+  font-weight: normal;
+}
+// font color of h5 is an exception
 h5, .h5 {
   color: @brand-primary;
+  font-weight: normal;
 }
 
 // labels with normal font weight
@@ -40,3 +46,17 @@ strong {
   #gradient > .striped(rgba(255,255,255,.4));
   background-size: 40px 40px;
 }
+
+// list group - show hover bg even for active items
+.list-group-item {
+  &.active:hover,
+  &.active:focus {
+    background-color: @list-group-hover-bg;
+  }
+}
+// list group - not borders on the left and right side
+.list-group-item {
+  border-right: none;
+  border-left: none;
+}
+
