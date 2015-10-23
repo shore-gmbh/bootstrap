@@ -103,9 +103,9 @@
 @line-height-large:         1.3333333; // extra decimals for Win 8.1 Chrome
 @line-height-small:         1.5;
 
-@border-radius-base:        4px;
-@border-radius-large:       6px;
-@border-radius-small:       3px;
+@border-radius-base:        3px;
+@border-radius-large:       4px;
+@border-radius-small:       2px;
 
 //** Global color for active items (e.g., navs or dropdowns).
 @component-active-color:    #fff;
@@ -497,21 +497,21 @@
 //
 //## Define colors for form feedback states and, by default, alerts.
 
-@state-success-text:             #3c763d;
-@state-success-bg:               #dff0d8;
-@state-success-border:           darken(spin(@state-success-bg, -10), 5%);
+@state-success-text:             darken(@brand-success, 10%);
+@state-success-bg:               lighten(@brand-success, 45%);
+@state-success-border:           transparent;
 
-@state-info-text:                #31708f;
-@state-info-bg:                  #d9edf7;
-@state-info-border:              darken(spin(@state-info-bg, -10), 7%);
+@state-info-text:                darken(@brand-primary, 5%);
+@state-info-bg:                  lighten(@brand-primary, 40%);
+@state-info-border:              transparent;
 
-@state-warning-text:             #8a6d3b;
-@state-warning-bg:               #fcf8e3;
-@state-warning-border:           darken(spin(@state-warning-bg, -10), 5%);
+@state-warning-text:             darken(@brand-warning, 0%);
+@state-warning-bg:               lighten(@brand-warning, 38%);
+@state-warning-border:           transparent;
 
-@state-danger-text:              #a94442;
-@state-danger-bg:                #f2dede;
-@state-danger-border:            darken(spin(@state-danger-bg, -10), 5%);
+@state-danger-text:              darken(@brand-danger, 5%);
+@state-danger-bg:                lighten(@brand-danger, 30%);
+@state-danger-border:            transparent;
 
 
 //== Tooltips
@@ -622,24 +622,24 @@
 //## Define alert colors, border radius, and padding.
 
 @alert-padding:               15px;
-@alert-border-radius:         @border-radius-base;
-@alert-link-font-weight:      bold;
+@alert-border-radius:         0;
+@alert-link-font-weight:      600;
 
 @alert-success-bg:            @state-success-bg;
 @alert-success-text:          @state-success-text;
-@alert-success-border:        @state-success-border;
+@alert-success-border:        transparent;
 
 @alert-info-bg:               @state-info-bg;
 @alert-info-text:             @state-info-text;
-@alert-info-border:           @state-info-border;
+@alert-info-border:           transparent;
 
 @alert-warning-bg:            @state-warning-bg;
 @alert-warning-text:          @state-warning-text;
-@alert-warning-border:        @state-warning-border;
+@alert-warning-border:        transparent;
 
 @alert-danger-bg:             @state-danger-bg;
 @alert-danger-text:           @state-danger-text;
-@alert-danger-border:         @state-danger-border;
+@alert-danger-border:         transparent;
 
 
 //== Progress bars
@@ -779,7 +779,7 @@
 //** Badge background color in active nav link
 @badge-active-bg:             #fff;
 
-@badge-font-weight:           bold;
+@badge-font-weight:           600;
 @badge-line-height:           1;
 @badge-border-radius:         10px;
 
@@ -821,7 +821,7 @@
 //
 //##
 
-@close-font-weight:           bold;
+@close-font-weight:           600;
 @close-color:                 #000;
 @close-text-shadow:           0 1px 0 #fff;
 
