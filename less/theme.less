@@ -94,3 +94,93 @@ strong {
 .badge {
   font-size: 11px;
 }
+
+// nav items links should be gray and switch to blue on hover without bg
+.nav > li > a {
+  color: @gray-dark;
+  &:hover,
+  &:focus {
+    background-color: inherit;
+    color: @brand-primary;
+  }
+}
+
+// nav pills should look like button groups
+.nav-pills > li {
+  > a {
+    border-radius: 0;
+    border: 1px solid @gray-divisor;
+    border-top-color: @brand-secondary;
+    border-bottom-color: @brand-secondary;
+    padding: 6px 15px;
+    font-size: 13px;
+  }
+  &:first-child > a {
+    border-radius: @border-radius-base 0 0 @border-radius-base;
+  }
+  &:last-child > a {
+    border-radius: 0 @border-radius-base @border-radius-base 0;
+  }
+  > a, a:hover, a:focus {
+    color: white;
+    background-color: @brand-secondary;
+  }
+  > a:hover, a:focus {
+    background-color: darken(@brand-secondary, 10%);
+  }
+  + li {
+    margin-left: -1px;
+  }
+
+  // Active state
+  &.active > a {
+    background-color: white;
+    &,
+    &:hover,
+    &:focus {
+      border-top-color: @gray-divisor;
+      border-bottom-color: @gray-divisor;
+      color: @gray-dark;
+    }
+    &:hover,
+    &:focus {
+      background-color: darken(white, 10%);
+    }
+  }
+
+  // Disabled state
+  &.disabled > a {
+    &,
+    &:hover,
+    &:focus {
+      border-top-color: @gray-divisor;
+      border-bottom-color: @gray-divisor;
+      color: @gray-light;
+      background-color: inherit;
+    }
+  }
+}
+
+// badges inside nav pills
+.nav-pills > li {
+  > a > .badge {
+    margin-left: 0;
+    vertical-align: inherit;
+    font-size: 12px;
+    background: transparent !important;
+    color: lighten(@gray-text, 5%) !important;
+    padding: 0;
+    &::before {
+      content: "(";
+    }
+    &::after {
+      content: ")";
+    }
+  }
+  &.disabled {
+    > a > .badge {
+      color: @gray-light !important;
+    }
+  }
+}
+
