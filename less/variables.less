@@ -9,12 +9,16 @@
 
 @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
+
 @gray-dark:              #3e4a54;
-@gray:                   #82888a; // from TEXT
-@gray-light:             #dedfe1;
-@gray-lighter:           #fcfcfc; // from BG
-@gray-divisor:           #ededed;
+@gray-text:              #82888a;
 @gray-mute:              #b0b5bc;
+@gray:                   #c3c8c9;
+@gray-line:              #d4d4d4;
+@gray-light:             #dedfe1;
+@gray-divisor:           #ededed;
+@gray-bg:                #fcfcfc;
+@gray-lighter:           @gray-bg;
 
 @brand-primary:          #47a3d1; // from DEFAULT
 @brand-secondary:        #616b78; // from PRIMARY
@@ -36,7 +40,7 @@
 //** Global textual link color.
 @link-color:            @brand-primary;
 //** Link hover color set via `darken()` function.
-@link-hover-color:      darken(@link-color, 15%);
+@link-hover-color:      @link-color;
 //** Link hover decoration.
 @link-hover-decoration: underline;
 
@@ -763,8 +767,8 @@
 //
 //##
 
-@well-bg:                     #f5f5f5;
-@well-border:                 darken(@well-bg, 7%);
+@well-bg:                     @gray-divisor;
+@well-border:                 transparent;
 
 
 //== Badges
