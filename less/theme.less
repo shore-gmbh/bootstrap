@@ -90,11 +90,6 @@ strong {
   border-radius: 0;
 }
 
-// badge font size smaller
-.badge {
-  font-size: 11px;
-}
-
 // nav items links should be gray and switch to blue on hover without bg
 .nav > li > a {
   color: @gray-dark;
@@ -161,29 +156,6 @@ strong {
   }
 }
 
-// badges inside nav pills
-.nav-pills > li {
-  > a > .badge {
-    margin-left: 0;
-    vertical-align: inherit;
-    font-size: 12px;
-    background: transparent !important;
-    color: lighten(@gray-text, 5%) !important;
-    padding: 0;
-    &::before {
-      content: "(";
-    }
-    &::after {
-      content: ")";
-    }
-  }
-  &.disabled {
-    > a > .badge {
-      color: @gray-light !important;
-    }
-  }
-}
-
 // nav tabs
 .nav-tabs {
   border: none;
@@ -205,6 +177,39 @@ strong {
     &.disabled > a {
       border: none;
       border-bottom: 1px dotted @gray-line;
+    }
+  }
+}
+
+// badge font size smaller
+.badge {
+  font-size: 11px;
+}
+
+// disabled badge
+.disabled .badge {
+  background-color: lighten(@brand-primary, 30%);
+}
+
+// badges inside nav
+.nav > li {
+  > a > .badge {
+    margin-left: 0;
+    vertical-align: inherit;
+    font-size: 12px;
+    background: transparent !important;
+    color: lighten(@gray-text, 10%) !important;
+    padding: 0;
+    &::before {
+      content: "(";
+    }
+    &::after {
+      content: ")";
+    }
+  }
+  &.disabled {
+    > a > .badge {
+      color: @gray-light !important;
     }
   }
 }
