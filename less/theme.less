@@ -25,3 +25,18 @@ h5, .h5 {
 strong {
   font-weight: 600;
 }
+
+// progress bar
+.progress {
+  height: 3px;
+  .box-shadow(none);
+}
+.progress-bar {
+  line-height: 3px;
+  .box-shadow(none);
+}
+.progress-striped .progress-bar,
+.progress-bar-striped {
+  #gradient > .striped(rgba(255,255,255,.4));
+  background-size: 40px 40px;
+}
