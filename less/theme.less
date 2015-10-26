@@ -54,7 +54,22 @@ strong {
     background-color: @list-group-hover-bg;
   }
 }
+// list group heading *CUSTOM ELEMENT*
+.list-group-heading {
+  position: relative;
+  display: block;
+  padding: 7px 15px;
+  // Place the border on the list items and negative margin up for better styling
+  margin-bottom: -1px;
+  background-color: @gray-bg;
+  border: 1px solid @list-group-border;
+
+  color: @gray-text;
+  font-size: 11px;
+  text-transform: uppercase;
+}
 // list group - not borders on the left and right side
+.list-group-heading,
 .list-group-item {
   border-right: none;
   border-left: none;
