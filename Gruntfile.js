@@ -40,7 +40,14 @@ module.exports = function (grunt) {
   grunt.initConfig({
 
     // Metadata.
-    pkg: grunt.file.readJSON('package.json'),
+    pkg: (function () {
+      var pkg = grunt.file.readJSON('package.json');
+
+      // NOTE: remove private namespace from package name
+      pkg.name = pkg.name.replace('@shore/', '');
+
+      return pkg;
+    }()),
     banner: '/*!\n' +
             ' * Bootstrap v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
             ' * Copyright 2011-<%= grunt.template.today("yyyy") %> <%= pkg.author %>\n' +
