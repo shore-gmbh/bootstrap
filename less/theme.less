@@ -215,7 +215,8 @@ strong {
 
 // badge font size smaller
 .badge {
-  font-size: 11px;
+  font-size: 10px;
+  padding: 2px 6px;
 }
 
 // disabled badge
@@ -282,4 +283,32 @@ strong {
 }
 .placeholder-female {
   background-image: data-uri('image/svg+xml;base64', '../images/placeholder-female.svg');
+}
+
+// icon button (with badge)
+.btn-icon {
+  position: relative;
+  line-height: 1;
+  padding: 0;
+  border: none;
+  > [class^="shore-icon-"],
+  > [class*=" shore-icon-"] {
+    color: @gray-dark;
+    font-size: 24px;
+    display: inline-block;
+    height: 34px;
+    width: 34px;
+    padding: 5px;
+  }
+  &:hover, &:focus {
+    > [class^="shore-icon-"],
+    > [class*=" shore-icon-"] {
+      color: @brand-primary;
+    }
+  }
+  > .badge {
+    position: absolute;
+    left: 18px;
+    top: 2px;
+  }
 }
