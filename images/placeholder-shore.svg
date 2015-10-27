@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 793.70667 793.70667"
+   version="1.1"
+   id="svg2"><defs
+     id="defs6"><clipPath
+       id="clipPath18"
+       clipPathUnits="userSpaceOnUse"><path
+         id="path20"
+         d="M 0,5952.8 0,0 l 5952.8,0 0,5952.8 -5952.8,0 z" /></clipPath></defs><g
+     transform="matrix(1.3333333,0,0,-1.3333333,0,793.70667)"
+     id="g10"><g
+       transform="scale(0.1)"
+       id="g12"><g
+         id="g14"><g
+           clip-path="url(#clipPath18)"
+           id="g16"><path
+             id="path22"
+             style="fill:#cacaca;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 0,0 5952.8,0 0,5952.8 L 0,5952.8 0,0 Z" /><path
+             id="path24"
+             style="fill:#eae9ea;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 3944.87,2099.93 0,606.98 -2370.92,909.97 0,-909.97 2370.92,-606.98" /><path
+             id="path26"
+             style="fill:#f9f9f9;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 1574.95,3616.88 1481.95,909.96 1268.96,-813.97 -2750.91,-1005.96 0,909.97" /><path
+             id="path28"
+             style="fill:#f9f9f9;fill-opacity:1;fill-rule:nonzero;stroke:none"
+             d="m 1914.94,1982.93 2029.93,722.98 0,-606.98 -1031.97,-665.98 -997.96,549.98" /></g></g></g></g></svg>
