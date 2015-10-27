@@ -37,6 +37,16 @@ npm run test-server
 
 to open the theme test page and start hacking the less files. The test-server will watch for files changes and autom. reloads the test page.
 
+
+### How to update the *Shore Icon Font*?
+
+* Go to [Fontastic](http://app.fontastic.me/#select/DodAuckJNKeGyhRNYdnd48)
+* Make sure **shore-icons** is selected (top-left, below Fontastic logo)
+* Select new icons</li>
+* Go to [Publish page](http://app.fontastic.me/#publish/font/DodAuckJNKeGyhRNYdnd48)
+* Click on **DOWNLOAD** button
+* Extract ZIP file and copy folder `shore-icons` to project root folder
+
 ### Build
 
 ```
