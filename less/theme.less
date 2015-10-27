@@ -28,6 +28,19 @@
   font-style: normal;
 }
 
+// spin the spinner
+@keyframes shore-spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.shore-icon-backend-spinner {
+  &:before {
+    animation: shore-spin 2s infinite linear;
+    display: inline-block;
+  }
+}
+
 // font weight of h1 & h2 should be lighter
 h1, .h1,
 h2, .h2 {
