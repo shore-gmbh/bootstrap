@@ -375,3 +375,25 @@ strong {
   margin-top: -5px;
 }
 
+// tooltip without rounded corners
+.tooltip-inner {
+  border-radius: 0;
+}
+
+// popover styles
+.popover {
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .22);
+  .popover-title {
+    border-color: @gray-divisor;
+    color: @brand-primary;
+    font-weight: normal;
+    padding: 17px 19px 15px 19px
+  }
+  .popover-content {
+    padding: 17px 19px;
+  }
+}
+

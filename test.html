@@ -23,33 +23,9 @@
     <!-- Custom styles for this template -->
     <link href="docs/examples/theme/theme.css" rel="stylesheet">
 
-    <style>
-      .page-header > h1 {
-        color: #47a3d1;
-      }
-      .shore-icons-list li {
-        text-align: center;
-        padding: 10px;
-        border: 1px solid #ebebeb;
-      }
-      .shore-icons-list li i {
-        font-size: 30px;
-        display: block;
-      }
-      .shore-icons-list li .class-of-shore-icon {
-        font-size: 10px;
-        display: block;
-      }
-      .bs-example {
-        background: #ebebeb;
-      }
-      .bs-example-tooltip .tooltip {
-        position: relative;
-        display: inline-block;
-        margin: 10px 20px;
-        opacity: 1;
-      }
-    </style>
+    <!-- test page styles -->
+    <link href="test.css" rel="stylesheet">
+
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="docs/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="docs/assets/js/ie-emulation-modes-warning.js"></script>
@@ -258,9 +234,57 @@
       <h2>on buttons</h2>
       <p>
         <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
-        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
         <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
         <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+      </p>
+
+      <div class="page-header">
+        <h1>Popovers</h1>
+      </div>
+
+      <h2>Static</h2>
+      <div class="bs-example bs-example-popover" data-example-id="static-popovers">
+        <div class="popover top">
+          <div class="arrow"></div>
+          <h3 class="popover-title">Popover top</h3>
+          <div class="popover-content">
+            <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+          </div>
+        </div>
+
+        <div class="popover right">
+          <div class="arrow"></div>
+          <h3 class="popover-title">Popover right</h3>
+          <div class="popover-content">
+            <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+          </div>
+        </div>
+
+        <div class="popover bottom">
+          <div class="arrow"></div>
+          <h3 class="popover-title">Popover bottom</h3>
+
+          <div class="popover-content">
+            <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+          </div>
+        </div>
+
+        <div class="popover left">
+          <div class="arrow"></div>
+          <h3 class="popover-title">Popover left</h3>
+          <div class="popover-content">
+            <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+          </div>
+        </div>
+
+        <div class="clearfix"></div>
+      </div>
+
+      <h2>Examples</h2>
+      <p>
+        <a tabindex="0" class="btn btn-lg btn-warning" role="button" data-placement="top" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+        <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
       </p>
 
       <div class="page-header">
@@ -912,6 +936,7 @@
       // enable tooltips
       $(function () {
           $('[data-toggle="tooltip"]').tooltip()
+          $('[data-toggle="popover"]').popover()
       })
     </script>
   </body>

@@ -1,0 +1,35 @@
+.page-header > h1 {
+  color: #47a3d1;
+}
+.shore-icons-list li {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ebebeb;
+}
+.shore-icons-list li i {
+  font-size: 30px;
+  display: block;
+}
+.shore-icons-list li .class-of-shore-icon {
+  font-size: 10px;
+  display: block;
+}
+.bs-example {
+  background: #f9f9f9;
+}
+.bs-example-tooltip .tooltip {
+  position: relative;
+  display: inline-block;
+  margin: 10px 20px;
+  opacity: 1;
+}
+.bs-example-popover {
+  padding-bottom: 24px;
+}
+.bs-example-popover .popover {
+  position: relative;
+  display: block;
+  float: left;
+  width: 260px;
+  margin: 20px;
+}
