@@ -129,8 +129,15 @@ strong {
   overflow: auto;
 }
 // panel variant secondary
+.panel-overlay,
 .panel-secondary {
   .panel-variant(@panel-secondary-border; @panel-secondary-text; @panel-secondary-heading-bg; @panel-secondary-border);
+}
+// panel overlays are placed fixed on the lower right corner of the screen
+.panel-overlay {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom: 4px solid @brand-primary;
 }
 
 // well without box-shadow and border-radius
@@ -367,6 +374,6 @@ strong {
 
 // fix position of close button in panel heading
 .panel-heading .close {
-  margin-top: -4px;
+  margin-top: -5px;
 }
 
