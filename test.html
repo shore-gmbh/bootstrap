@@ -40,6 +40,15 @@
         font-size: 10px;
         display: block;
       }
+      .bs-example {
+        background: #ebebeb;
+      }
+      .bs-example-tooltip .tooltip {
+        position: relative;
+        display: inline-block;
+        margin: 10px 20px;
+        opacity: 1;
+      }
     </style>
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="docs/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -212,6 +221,46 @@
         <a href="#" class="btn btn-icon">
           <i class="shore-icon-backend-nav-messages"></i>
         </a>
+      </p>
+
+      <div class="page-header">
+        <h1>Tooltips</h1>
+      </div>
+
+      <h2>Static</h2>
+      <div class="bs-example bs-example-tooltip">
+        <div class="tooltip left" role="tooltip">
+          <div class="tooltip-arrow"></div>
+          <div class="tooltip-inner">
+            Tooltip on the left
+          </div>
+        </div>
+        <div class="tooltip top" role="tooltip">
+          <div class="tooltip-arrow"></div>
+          <div class="tooltip-inner">
+            Tooltip on the top
+          </div>
+        </div>
+        <div class="tooltip bottom" role="tooltip">
+          <div class="tooltip-arrow"></div>
+          <div class="tooltip-inner">
+            Tooltip on the bottom
+          </div>
+        </div>
+        <div class="tooltip right" role="tooltip">
+          <div class="tooltip-arrow"></div>
+          <div class="tooltip-inner">
+            Tooltip on the right
+          </div>
+        </div>
+      </div>
+
+      <h2>on buttons</h2>
+      <p>
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+        <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
       </p>
 
       <div class="page-header">
@@ -859,5 +908,11 @@
     <script src="docs/assets/js/docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script>
+      // enable tooltips
+      $(function () {
+          $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
   </body>
 </html>
