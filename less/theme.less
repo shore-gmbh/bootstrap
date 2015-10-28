@@ -128,12 +128,10 @@ strong {
   color: @gray-mute;
   overflow: auto;
 }
-// panel variant secondary
-.panel-overlay,
-.panel-secondary {
-  .panel-variant(@panel-secondary-border; @panel-secondary-text; @panel-secondary-heading-bg; @panel-secondary-border);
+// panel variant overlays - are placed fixed on the lower right corner of the screen
+.panel-overlay {
+  .panel-variant(@panel-overlay-border; @panel-overlay-text; @panel-overlay-heading-bg; @panel-overlay-border);
 }
-// panel overlays are placed fixed on the lower right corner of the screen
 .panel-overlay {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
