@@ -27,6 +27,15 @@
   font-weight: normal;
   font-style: normal;
 }
+[class^="shore-icon-"],
+[class*=" shore-icon-"] {
+  position: relative;
+  top: 3px;
+  display: inline-block;
+  margin-top: -2px;
+  line-height: 1;
+  font-size: larger;
+}
 
 // spin the spinner
 @keyframes shore-spin {
@@ -362,6 +371,7 @@ strong {
 
 // close button
 .close {
+  font-size: medium;
   .opacity(.65);
 
   &:hover,
@@ -378,6 +388,11 @@ strong {
 // tooltip without rounded corners
 .tooltip-inner {
   border-radius: 0;
+}
+
+// alert dismissible close button position fix
+.alert-dismissable .close, .alert-dismissible .close {
+  top: 0;
 }
 
 // popover styles
