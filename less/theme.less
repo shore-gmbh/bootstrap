@@ -412,3 +412,25 @@ strong {
   }
 }
 
+// blockquote style
+.blockquote-reverse,
+blockquote.pull-right,
+blockquote {
+  // font light and italic
+  font-style: italic;
+  font-weight: 200;
+  // smaller border
+  border-width: 4px;
+  // reduce top/bottom padding
+  padding: 0 @line-height-computed;
+  // remove line from footer
+  footer,
+  small,
+  .small {
+    font-style: normal;
+    &:before {
+      content: '';
+    }
+  }
+}
+
