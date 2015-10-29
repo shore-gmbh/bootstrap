@@ -39,4 +39,13 @@
 .bs-example-bg-classes p {
   padding: 15px;
 }
+.nav-style-switcher {
+  display: inline-block;
+}
+.h2-nav {
+  margin: 2em 0 1em 0;
+}
+.page-header + .h2-nav {
+  margin-top: inherit;
+}
 

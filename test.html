@@ -587,13 +587,26 @@
         </ul>
       </div>
 
-
       <div class="page-header">
         <h1>Navs</h1>
       </div>
 
-      <h2>Tabs</h2>
-      <ul class="nav nav-tabs" role="tablist">
+      <h2 class="h2-nav">Tabs
+        <form class="nav-style-switcher" data-ref="tabNav">
+          <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default btn-xs active">
+              <input type="radio" name="navStyle" value="" checked> regular
+            </label>
+            <label class="btn btn-default btn-xs">
+              <input type="radio" name="navStyle" value="nav-justified"> justified
+            </label>
+            <label class="btn btn-default btn-xs">
+              <input type="radio" name="navStyle" value="nav-stacked"> stacked
+            </label>
+          </div>
+        </form>
+      </h2>
+      <ul id="tabNav" class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active"><a href="#">Home <span class="badge">42</span></a></li>
         <li role="presentation"><a href="#">Profile <span class="badge">99+</span></a></li>
         <li role="presentation"><a href="#">Messages</a></li>
@@ -612,8 +625,22 @@
         <li class="disabled" role="presentation"><a href="#">Disabled <span class="badge">2</span></a></li>
       </ul>
 
-      <h2>Pills</h2>
-      <ul class="nav nav-pills" role="tablist">
+      <h2 class="h2-nav">Pills
+        <form class="nav-style-switcher" data-ref="pillNav">
+          <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default btn-xs active">
+              <input type="radio" name="navStyle" value="" checked> regular
+            </label>
+            <label class="btn btn-default btn-xs">
+              <input type="radio" name="navStyle" value="nav-justified"> justified
+            </label>
+            <label class="btn btn-default btn-xs">
+              <input type="radio" name="navStyle" value="nav-stacked"> stacked
+            </label>
+          </div>
+        </form>
+      </h2>
+      <ul id="pillNav" class="nav nav-pills" role="tablist">
         <li role="presentation" class="active"><a href="#">Home <span class="badge">42</span></a></li>
         <li role="presentation"><a href="#">Profile <span class="badge">99+</span></a></li>
         <li role="presentation"><a href="#">Messages</a></li>
@@ -968,11 +995,20 @@
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="docs/assets/js/ie10-viewport-bug-workaround.js"></script>
     <script>
-      // enable tooltips
       $(function () {
-          $('[data-toggle="tooltip"]').tooltip()
-          $('[data-toggle="popover"]').popover()
+        // enable tooltips and popovers
+        $('[data-toggle="tooltip"]').tooltip()
+        $('[data-toggle="popover"]').popover()
+
+        // provide switching tab styles
+        $('.nav-style-switcher').on('change', function () {
+          var newClass = this.elements.navStyle.value;
+          var $nav = $('#' + this.dataset.ref);
+          $nav.removeClass('nav-justified nav-stacked');
+          if (newClass) $nav.addClass(newClass);
+        });
       })
+
     </script>
   </body>
 </html>
