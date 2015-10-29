@@ -48,4 +48,7 @@
 .page-header + .h2-nav {
   margin-top: inherit;
 }
-
+.bs-example-boxed {
+  padding: 1.5em;
+  background: #efefef;
+}

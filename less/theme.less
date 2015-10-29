@@ -434,3 +434,47 @@ blockquote {
   }
 }
 
+// table header styles
+.table > thead > tr > th {
+  border-bottom-width: 1px;
+  font-weight: normal;
+  font-size: 11px;
+  text-transform: uppercase;
+  background-color: @gray-bg;
+  color: @gray-text;
+}
+
+// table first/last cell padding
+.table:not(.table-bordered) {
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th:first-child,
+      > td:first-child {
+        padding-left: (@table-cell-padding * 2);
+      }
+      > th:last-child,
+      > td:last-child {
+        padding-right: (@table-cell-padding * 2);
+      }
+    }
+  }
+}
+.table-condensed:not(.table-bordered) {
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th:first-child,
+      > td:first-child {
+        padding-left: (@table-condensed-cell-padding * 2);
+      }
+      > th:last-child,
+      > td:last-child {
+        padding-right: (@table-condensed-cell-padding * 2);
+      }
+    }
+  }
+}
+

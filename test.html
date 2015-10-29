@@ -335,40 +335,44 @@
         <h1>Tables</h1>
       </div>
       <div class="row">
-        <div class="col-md-6">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Username</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>1</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="col-md-6 bs-example-boxed">
+          <h5>Table inside panel</h5>
+          <div class="panel panel-default">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
         <div class="col-md-6">
-          <table class="table table-striped">
+          <h5>Table striped</h5>
+          <table class="table table-striped table-hover">
             <thead>
               <tr>
                 <th>#</th>
@@ -403,6 +407,7 @@
 
       <div class="row">
         <div class="col-md-6">
+          <h5>Table bordered</h5>
           <table class="table table-bordered">
             <thead>
               <tr>
@@ -439,32 +444,70 @@
           </table>
         </div>
         <div class="col-md-6">
-          <table class="table table-condensed">
+          <h5>Table condensed / contextual</h5>
+          <table class="table table-condensed table-hover">
             <thead>
               <tr>
                 <th>#</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Username</th>
+                <th>Column heading</th>
+                <th>Column heading</th>
+                <th>Column heading</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+              <tr class="active">
+                <th scope="row">1</th>
+                <td>active</td>
+                <td>active</td>
+                <td>active</td>
               </tr>
               <tr>
-                <td>2</td>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
+                <th scope="row">2</th>
+                <td>regular</td>
+                <td>regular</td>
+                <td>regular</td>
+              </tr>
+              <tr class="success">
+                <th scope="row">3</th>
+                <td>success</td>
+                <td>success</td>
+                <td>success</td>
               </tr>
               <tr>
-                <td>3</td>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
+                <th scope="row">4</th>
+                <td>regular</td>
+                <td>regular</td>
+                <td>regular</td>
+              </tr>
+              <tr class="info">
+                <th scope="row">5</th>
+                <td>info</td>
+                <td>info</td>
+                <td>info</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>regular</td>
+                <td>regular</td>
+                <td>regular</td>
+              </tr>
+              <tr class="warning">
+                <th scope="row">7</th>
+                <td>warning</td>
+                <td>warning</td>
+                <td>warning</td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>regular</td>
+                <td>regular</td>
+                <td>regular</td>
+              </tr>
+              <tr class="danger">
+                <th scope="row">9</th>
+                <td>danger</td>
+                <td>danger</td>
+                <td>danger</td>
               </tr>
             </tbody>
           </table>
