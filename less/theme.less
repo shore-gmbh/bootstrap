@@ -145,6 +145,13 @@ strong {
   border-left: none;
 }
 
+// disabled list group item with opacity
+.list-group-item.disabled,
+.list-group-item.disabled:hover,
+.list-group-item.disabled:focus {
+  .opacity(@disabled-opacity);
+}
+
 // panel without border
 .panel {
   border: none;
@@ -281,11 +288,6 @@ strong {
   padding: 2px 6px;
 }
 
-// disabled badge
-.disabled .badge {
-  background-color: lighten(@brand-primary, 30%);
-}
-
 // badges inside nav
 .nav > li {
   > a > .badge {
@@ -347,25 +349,39 @@ strong {
   background-image: data-uri('image/svg+xml;base64', '../images/placeholder-female.svg');
 }
 
+// change button disabled opacity
+.btn {
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    cursor: @cursor-disabled;
+    .opacity(@disabled-opacity);
+  }
+}
+
 // icon button (with badge)
 .btn-icon {
   position: relative;
   line-height: 1;
   padding: 0;
   border: none;
+  background: transparent;
   > [class^="shore-icon-"],
   > [class*=" shore-icon-"] {
+    top: 1px;
     color: @gray-dark;
     font-size: 24px;
-    display: inline-block;
+    display: block;
     height: 34px;
     width: 34px;
     padding: 5px;
   }
-  &:hover, &:focus {
-    > [class^="shore-icon-"],
-    > [class*=" shore-icon-"] {
-      color: @brand-primary;
+  &:not([disabled]) {
+    &:hover, &:focus {
+      > [class^="shore-icon-"],
+      > [class*=" shore-icon-"] {
+        color: @brand-primary;
+      }
     }
   }
   > .badge {
@@ -396,7 +412,7 @@ strong {
     width: 8px;
     margin-left: -5px;
     margin-right: 5px;
-    opacity: .7;
+    .opacity(.7);
   }
 }
 
