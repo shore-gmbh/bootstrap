@@ -87,5 +87,8 @@
       "fonts",
       "js"
     ]
+  },
+  "dependencies": {
+    "awesome-bootstrap-checkbox": "^0.3.6"
   }
 }

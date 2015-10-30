@@ -12,7 +12,38 @@
 @import "mixins.less";
 
 //
-// Load Shore icon font
+// Load and theme awesome-bootstrap-checkbox
+// --------------------------------------------------
+
+@import "../node_modules/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.less";
+@font-family-icon: "shore-icons";
+@fa-var-check: "\e03b";
+
+// theme checkbox / radio styles
+.checkbox label::after {
+  font-size: 9px;
+  padding-left: 4px;
+  padding-top: 3px;
+  color: inherit;
+}
+.radio label::before,
+.checkbox label::before {
+  border-color: @gray-line;
+}
+.radio label::after {
+  background-color: @gray-text;
+}
+.radio input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox input[type="radio"] {
+  &:disabled + label {
+    cursor: @cursor-disabled;
+    .opacity(@disabled-opacity);
+  }
+}
+
+//
+// Load and theme Shore icon font
 // --------------------------------------------------
 
 @import "shore-icons.less";
