@@ -533,3 +533,22 @@ blockquote {
   }
 }
 
+// form label
+label {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+// form text input
+.form-control {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  .box-shadow(none);
+  &:focus {
+    .box-shadow(none);
+  }
+  padding: 6px 1px;
+}
+
