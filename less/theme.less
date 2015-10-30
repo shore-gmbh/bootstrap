@@ -19,26 +19,34 @@
 @font-family-icon: "shore-icons";
 @fa-var-check: "\e03b";
 
-// theme checkbox / radio styles
+// fix checkbox check icon placement and color
 .checkbox label::after {
   font-size: 9px;
   padding-left: 4px;
   padding-top: 3px;
   color: inherit;
 }
+// fix border color
 .radio label::before,
 .checkbox label::before {
   border-color: @gray-line;
 }
+// fix color of active default radio check "icon"
 .radio label::after {
   background-color: @gray-text;
 }
 .radio input[type="radio"],
 .checkbox input[type="checkbox"],
 .checkbox input[type="radio"] {
+  // fix disabled opacity
   &:disabled + label {
     cursor: @cursor-disabled;
     .opacity(@disabled-opacity);
+  }
+  // fix outline style for radios (circle)
+  &:focus + label::before {
+    outline: none;
+    box-shadow: 0 0 3pt 1pt @brand-primary;
   }
 }
 
