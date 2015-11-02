@@ -15,7 +15,7 @@
   "author": "Twitter, Inc.",
   "scripts": {
     "test": "grunt test",
-    "test-server": "live-server --open=test.html",
+    "test-server": "live-server --open=test-page/index.html",
     "build": "grunt dist"
   },
   "style": "dist/css/bootstrap.css",
