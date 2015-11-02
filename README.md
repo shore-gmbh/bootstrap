@@ -7,6 +7,9 @@ At Shore we create our own builds of Bootstrap. We do this for several reasons:
 * add custom element styles
 * distribute as *npm* private module, so that we can easily use it in multiple projects to ensure a consistent brand experience
 
+Visit the [Shore Bootstrap Theme Test Page](http://shore-bootstrap-theme.surge.sh)!
+(hosted by awesome [surge.sh](https://surge.sh)
+
 ## Usage
 
 Install via npm with
@@ -62,6 +65,12 @@ npm publish
 ```
 
 You need to be logged in to npm with the `shore` user!
+
+### Deploy the test page on surge.sh
+
+```
+npm run deploy-test-page
+```
 
 <hr>
 
