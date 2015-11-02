@@ -8,7 +8,7 @@ At Shore we create our own builds of Bootstrap. We do this for several reasons:
 * distribute as *npm* private module, so that we can easily use it in multiple projects to ensure a consistent brand experience
 
 Visit the [Shore Bootstrap Theme Test Page](http://shore-bootstrap-theme.surge.sh)!
-(hosted by awesome [surge.sh](https://surge.sh)
+<br><small>(hosted by awesome [surge.sh])(https://surge.sh)</small>
 
 ## Usage
 
