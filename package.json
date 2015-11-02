@@ -16,7 +16,7 @@
   "scripts": {
     "test": "grunt test",
     "test-server": "live-server --open=test-page/index.html",
-    "deploy-test-page": "npm run build && cp -LRp test-page/ test-page-surge && cp dist/css/bootstrap*.min.css test-page-surge/ && htmlprocessor test-page-surge/index.html -o test-page-surge/index.html && surge test-page-surge shore-bootstrap-theme.surge.sh",
+    "deploy-test-page": "npm run build && cp -LRp test-page/ test-page-surge && rm -rf test-page-surge/less && cp dist/css/bootstrap*.min.css test-page-surge/ && htmlprocessor test-page-surge/index.html -o test-page-surge/index.html && surge test-page-surge shore-bootstrap-theme.surge.sh",
     "build": "grunt dist"
   },
   "style": "dist/css/bootstrap.css",
