@@ -103,6 +103,7 @@ h5, .h5 {
 // labels with normal font weight
 .label {
   font-weight: normal;
+  margin-bottom: 3px;
 }
 
 // strong font weight a bit lighter pls
@@ -538,6 +539,21 @@ blockquote {
   font-size: 11px;
   text-transform: uppercase;
   font-weight: normal;
+  color: @gray;
+
+  &.form-control-has-focus {
+    color: @brand-primary;
+  }
+
+  .has-success & {
+    color: @state-success-text;
+  }
+  .has-warning & {
+    color: @state-warning-text;
+  }
+  .has-error & {
+    color: @state-danger-text;
+  }
 }
 
 // form text input
@@ -548,7 +564,15 @@ blockquote {
   .box-shadow(none);
   &:focus {
     .box-shadow(none);
+    border-width: 2px;
+    padding-bottom: 5px;
   }
-  padding: 6px 1px;
+  padding: 6px 0;
+}
+
+// help block with smaller font size
+.help-block {
+  font-size: 11px;
+  color: @gray-mute;
 }
 
