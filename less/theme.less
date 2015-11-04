@@ -574,10 +574,37 @@ blockquote {
   }
   padding: 6px 0;
 }
+.input-group-addon {
+  border: none;
+  color: @gray-mute;
+  background-color: white !important;
+}
 
 // help block with smaller font size
 .help-block {
   font-size: 11px;
   color: @gray-mute;
+}
+
+// fix vertical control label position for horizontal forms
+.form-horizontal {
+  @media (min-width: @screen-sm-min) {
+    .control-label {
+      text-align: right;
+      margin-bottom: 0;
+
+      // Default padding plus a border plus extra padding
+      padding-top: (@padding-base-vertical + 1 + 2);
+    }
+  }
+}
+
+// fix positioning and size of form-control-feedback icon
+.has-feedback label ~ .form-control-feedback {
+  top: 29px;
+}
+.has-feedback .form-control-feedback {
+  position: absolute;
+  font-size: 140%;
 }
 
