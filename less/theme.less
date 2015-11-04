@@ -608,3 +608,37 @@ blockquote {
   font-size: 140%;
 }
 
+// remove inset shadow for active buttons
+.btn:active, .btn.active {
+  .box-shadow(none);
+}
+
+// fix button default hover and active style
+.btn-default {
+  &.focus,
+  &:focus,
+  &.focus.active,
+  &.focus:active,
+  &:focus.active,
+  &:focus:active,
+  &.active,
+  &:active,
+  &:active:hover,
+  &.active:hover,
+  &:hover {
+    color: @brand-primary;
+    background-color: white;
+    border-color: @brand-primary;
+  }
+  &.active,
+  &:active,
+  &.focus.active,
+  &.focus:active,
+  &:focus.active,
+  &:focus:active {
+    &,
+    &:hover {
+      background-color: @bg-hover;
+    }
+  }
+}
