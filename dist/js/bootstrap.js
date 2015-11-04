@@ -2372,10 +2372,15 @@ if (typeof jQuery === 'undefined') {
   function handleFormControlHasFocusClassOnLabel(action) {
     return function (evt) {
       var $target = $(evt.target);
+      var $label;
 
       if (!$target.hasClass('form-control')) return;
+      if (!$target.attr('id')) return;
 
-      $target.prev('.control-label')[action + 'Class']('form-control-has-focus');
+      $label = $('label[for=' + $target.attr('id') + ']');
+      if (!$label.length) return;
+
+      $label[action + 'Class']('form-control-has-focus');
     }
   }
 
