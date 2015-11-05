@@ -14,7 +14,7 @@ Visit the [Shore Bootstrap Theme Test Page](http://shore-bootstrap-theme.surge.s
 Install via npm with
 
 ```
-npm install @shore/bootstrap
+npm install @shore/bootstrap@3.3.5-shore.N (replace N with latest version)
 ```
 
 and use the files from `dist` folder.
