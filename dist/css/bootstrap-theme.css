@@ -568,11 +568,6 @@ strong {
 .list-group-item.active:focus {
   background-color: #eaf5fa;
 }
-legend {
-  margin-bottom: 15px;
-  border-right: none;
-  border-left: none;
-}
 legend,
 .list-group-heading {
   position: relative;
@@ -583,6 +578,11 @@ legend,
   text-transform: uppercase;
   background-color: #fcfcfc;
   border: 1px solid #ededed;
+}
+legend {
+  margin-bottom: 15px;
+  border-right: none;
+  border-left: none;
 }
 .list-group-heading {
   margin-bottom: -1px;
