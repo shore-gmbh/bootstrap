@@ -133,19 +133,26 @@ strong {
     background-color: @list-group-hover-bg;
   }
 }
-// list group heading *CUSTOM ELEMENT*
+// lengend & list group heading *CUSTOM ELEMENT*
+legend {
+  margin-bottom: @form-group-margin-bottom;
+  border-right: none;
+  border-left: none;
+}
+legend,
 .list-group-heading {
   position: relative;
   display: block;
   padding: 7px 15px;
-  // Place the border on the list items and negative margin up for better styling
-  margin-bottom: -1px;
   background-color: @gray-bg;
   border: 1px solid @list-group-border;
-
   color: @gray-text;
   font-size: 11px;
   text-transform: uppercase;
+}
+.list-group-heading {
+  // Place the border on the list items and negative margin up for better styling
+  margin-bottom: -1px;
 }
 // list group - not borders on the left and right side
 .list-group-heading,
@@ -192,6 +199,12 @@ strong {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   // border-bottom: 4px solid @brand-primary; // Rudi don't like!
+}
+// expand legend inside panel body
+.panel-body legend {
+  margin-left: -@panel-body-padding;
+  margin-right: -@panel-body-padding;
+  box-sizing: content-box;
 }
 
 // well without box-shadow and border-radius
