@@ -816,6 +816,72 @@ fieldset[disabled] .btn {
   top: 2px;
   left: 18px;
 }
+.btn-mute {
+  color: #3e4a54;
+  background-color: #dedfe1;
+  border-color: transparent;
+}
+.btn-mute:focus,
+.btn-mute.focus {
+  color: #3e4a54;
+  background-color: #c3c5c9;
+  border-color: rgba(0, 0, 0, 0);
+}
+.btn-mute:hover {
+  color: #3e4a54;
+  background-color: #c3c5c9;
+  border-color: rgba(0, 0, 0, 0);
+}
+.btn-mute:active,
+.btn-mute.active,
+.open > .dropdown-toggle.btn-mute {
+  color: #3e4a54;
+  background-color: #c3c5c9;
+  border-color: rgba(0, 0, 0, 0);
+}
+.btn-mute:active:hover,
+.btn-mute.active:hover,
+.open > .dropdown-toggle.btn-mute:hover,
+.btn-mute:active:focus,
+.btn-mute.active:focus,
+.open > .dropdown-toggle.btn-mute:focus,
+.btn-mute:active.focus,
+.btn-mute.active.focus,
+.open > .dropdown-toggle.btn-mute.focus {
+  color: #3e4a54;
+  background-color: #b1b3b8;
+  border-color: rgba(0, 0, 0, 0);
+}
+.btn-mute:active,
+.btn-mute.active,
+.open > .dropdown-toggle.btn-mute {
+  background-image: none;
+}
+.btn-mute.disabled,
+.btn-mute[disabled],
+fieldset[disabled] .btn-mute,
+.btn-mute.disabled:hover,
+.btn-mute[disabled]:hover,
+fieldset[disabled] .btn-mute:hover,
+.btn-mute.disabled:focus,
+.btn-mute[disabled]:focus,
+fieldset[disabled] .btn-mute:focus,
+.btn-mute.disabled.focus,
+.btn-mute[disabled].focus,
+fieldset[disabled] .btn-mute.focus,
+.btn-mute.disabled:active,
+.btn-mute[disabled]:active,
+fieldset[disabled] .btn-mute:active,
+.btn-mute.disabled.active,
+.btn-mute[disabled].active,
+fieldset[disabled] .btn-mute.active {
+  background-color: #dedfe1;
+  border-color: transparent;
+}
+.btn-mute .badge {
+  color: #dedfe1;
+  background-color: #3e4a54;
+}
 .caret {
   display: inline;
   width: auto;

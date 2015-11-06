@@ -2504,7 +2504,7 @@ legend {
   line-height: inherit;
   color: #82888a;
   border: 0;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #ededed;
 }
 label {
   display: inline-block;
@@ -3023,7 +3023,7 @@ select[multiple].input-lg {
 .btn:hover,
 .btn:focus,
 .btn.focus {
-  color: #333;
+  color: #3e4a54;
   text-decoration: none;
 }
 .btn:active,
@@ -3047,25 +3047,25 @@ fieldset[disabled] a.btn {
   pointer-events: none;
 }
 .btn-default {
-  color: #333;
+  color: #3e4a54;
   background-color: #fff;
   border-color: #d4d4d4;
 }
 .btn-default:focus,
 .btn-default.focus {
-  color: #333;
+  color: #3e4a54;
   background-color: #e6e6e6;
   border-color: #949494;
 }
 .btn-default:hover {
-  color: #333;
+  color: #3e4a54;
   background-color: #e6e6e6;
   border-color: #b5b5b5;
 }
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-  color: #333;
+  color: #3e4a54;
   background-color: #e6e6e6;
   border-color: #b5b5b5;
 }
@@ -3078,7 +3078,7 @@ fieldset[disabled] a.btn {
 .btn-default:active.focus,
 .btn-default.active.focus,
 .open > .dropdown-toggle.btn-default.focus {
-  color: #333;
+  color: #3e4a54;
   background-color: #d4d4d4;
   border-color: #949494;
 }
@@ -3110,7 +3110,7 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-default .badge {
   color: #fff;
-  background-color: #333;
+  background-color: #3e4a54;
 }
 .btn-primary {
   color: #fff;
