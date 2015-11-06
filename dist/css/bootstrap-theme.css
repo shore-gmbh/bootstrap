@@ -1109,4 +1109,12 @@ blockquote .small:before {
 .alert-success {
   color: #a1b32e;
 }
+.navbar-toggle:hover .icon-bar,
+.navbar-toggle:focus .icon-bar {
+  background-color: #47a3d1;
+}
+.navbar-inverse .navbar-toggle:hover .icon-bar,
+.navbar-inverse .navbar-toggle:focus .icon-bar {
+  background-color: white;
+}
 /*# sourceMappingURL=bootstrap-theme.css.map */
