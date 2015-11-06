@@ -665,3 +665,16 @@ blockquote {
   color: darken(@brand-success, 5%);
 }
 
+// add icon hover to navbar toggle
+.navbar-toggle {
+  &:hover,
+  &:focus {
+    .icon-bar {
+      background-color: @brand-primary;
+      .navbar-inverse & {
+        background-color: white;
+      }
+    }
+  }
+}
+
