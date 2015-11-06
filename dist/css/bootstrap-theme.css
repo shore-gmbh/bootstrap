@@ -255,6 +255,11 @@ input[type="radio"] .styled:checked + label::after {
 .radio label::after {
   background-color: #82888a;
 }
+.radio input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox input[type="radio"] {
+  cursor: pointer;
+}
 .radio input[type="radio"]:disabled + label,
 .checkbox input[type="checkbox"]:disabled + label,
 .checkbox input[type="radio"]:disabled + label {
@@ -758,6 +763,20 @@ legend {
   font-size: 11px;
   text-transform: uppercase;
   border-radius: 0;
+}
+.panel .panel-heading .breadcrumb {
+  padding: 0;
+  margin-bottom: 0;
+  background: inherit;
+}
+.panel .panel-heading .breadcrumb li {
+  color: inherit;
+}
+.panel .panel-heading .breadcrumb a {
+  color: inherit;
+}
+.panel .panel-heading .breadcrumb > li + li:before {
+  color: inherit;
 }
 .placeholder-marked,
 .img-marked {
