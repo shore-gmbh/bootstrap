@@ -641,6 +641,9 @@ legend {
   border-bottom-color: transparent;
 }
 .panel-overlay {
+  margin: 0;
+  border-top-left-radius: 3px * 2;
+  border-top-right-radius: 3px * 2;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }

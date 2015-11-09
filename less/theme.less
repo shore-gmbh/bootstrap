@@ -198,9 +198,17 @@ legend {
   .panel-variant(@panel-overlay-border; @panel-overlay-text; @panel-overlay-heading-bg; @panel-overlay-border);
 }
 .panel-overlay {
+  // top border radius needs to be bigger than of panel-heading
+  // so that panel bg doesn't shine through
+  border-top-left-radius: @panel-border-radius * 2;
+  border-top-right-radius: @panel-border-radius * 2;
+
+  // no bottom border radius
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  // border-bottom: 4px solid @brand-primary; // Rudi don't like!
+
+  // no margins when used as overlay
+  margin: 0;
 }
 // expand legend inside panel body
 .panel-body legend {
