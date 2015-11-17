@@ -619,7 +619,6 @@ legend {
   color: #47a3d1;
 }
 .panel-footer {
-  overflow: auto;
   color: #b0b5bc;
 }
 .panel-overlay {
@@ -1138,5 +1137,29 @@ blockquote .small:before {
 .navbar-inverse .navbar-toggle:hover .icon-bar,
 .navbar-inverse .navbar-toggle:focus .icon-bar {
   background-color: white;
+}
+.flex-form-inline {
+  display: table;
+}
+.flex-form-inline .flex-cell {
+  display: table-cell;
+  padding-right: 12px;
+  white-space: nowrap;
+}
+.flex-form-inline .flex-cell:last-child {
+  padding-right: 0;
+}
+.flex-form-inline .flex-cell.flex-spread {
+  width: 100%;
+}
+.panel-footer .flex-form-inline .form-control {
+  background: transparent;
+  border-bottom-color: transparent;
+}
+.show-on-parent-hover {
+  visibility: hidden;
+}
+*:hover > .show-on-parent-hover {
+  visibility: visible;
 }
 /*# sourceMappingURL=bootstrap-theme.css.map */
