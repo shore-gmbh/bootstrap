@@ -399,6 +399,7 @@ legend {
   fieldset[disabled] & {
     cursor: @cursor-disabled;
     .opacity(@disabled-opacity);
+    text-decoration: none;
   }
 }
 
@@ -678,6 +679,10 @@ blockquote {
     &:hover {
       background-color: @bg-hover;
     }
+  }
+  &.disabled, &[disabled] {
+    color: @btn-default-color !important;
+    background-color: @btn-default-bg !important;
   }
 }
 
