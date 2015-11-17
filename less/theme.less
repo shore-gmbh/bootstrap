@@ -698,3 +698,19 @@ blockquote {
   }
 }
 
+// flex form inline (custom)
+.flex-form-inline {
+  display: table;
+  .flex-cell {
+    display: table-cell;
+    padding-right: @padding-base-horizontal;
+    white-space: nowrap;
+    &:last-child {
+      padding-right: 0;
+    }
+    &.flex-spread {
+      width: 100%;
+    }
+  }
+}
+
