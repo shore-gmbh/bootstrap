@@ -720,3 +720,11 @@ blockquote {
   background: transparent;
 }
 
+// just show node if parent gets hover
+.show-on-parent-hover {
+  visibility: hidden;
+  *:hover > & {
+    visibility: visible;
+  }
+}
+
