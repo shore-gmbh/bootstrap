@@ -704,18 +704,27 @@ blockquote {
   }
 }
 
-// flex form inline (custom)
+// flex form inline / flex row (custom)
+.flex-row,
 .flex-form-inline {
   display: table;
+  width: 100%;
   .flex-cell {
+    width: 1%;
     display: table-cell;
-    padding-right: @padding-base-horizontal;
     white-space: nowrap;
-    &:last-child {
-      padding-right: 0;
-    }
     &.flex-spread {
       width: 100%;
+    }
+  }
+}
+
+// flex form inline uses padding between cells
+.flex-form-inline {
+  .flex-cell {
+    padding-right: @padding-base-horizontal;
+    &:last-child {
+      padding-right: 0;
     }
   }
 }

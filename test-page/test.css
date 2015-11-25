@@ -52,3 +52,10 @@
   padding: 1.5em;
   background: #efefef;
 }
+.flex-row-example .flex-cell {
+  border: 1px solid grey;
+  padding: 1em;
+}
+.flex-row-example .flex-cell:not(:last-child) {
+  border-right: none;
+}
