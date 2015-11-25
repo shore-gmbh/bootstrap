@@ -1149,19 +1149,26 @@ blockquote .small:before {
 .navbar-inverse .navbar-toggle:focus .icon-bar {
   background-color: white;
 }
+.flex-row,
 .flex-form-inline {
   display: table;
+  width: 100%;
 }
+.flex-row .flex-cell,
 .flex-form-inline .flex-cell {
   display: table-cell;
-  padding-right: 12px;
+  width: 1%;
   white-space: nowrap;
+}
+.flex-row .flex-cell.flex-spread,
+.flex-form-inline .flex-cell.flex-spread {
+  width: 100%;
+}
+.flex-form-inline .flex-cell {
+  padding-right: 12px;
 }
 .flex-form-inline .flex-cell:last-child {
   padding-right: 0;
-}
-.flex-form-inline .flex-cell.flex-spread {
-  width: 100%;
 }
 .panel-footer .flex-form-inline .form-control {
   background: transparent;
