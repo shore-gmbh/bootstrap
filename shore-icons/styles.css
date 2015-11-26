@@ -68,9 +68,6 @@
 .shore-icon-backend-directory-bookable:before {
   content: "\e009";
 }
-.shore-icon-backend-dragndrop:before {
-  content: "\e00a";
-}
 .shore-icon-backend-expand:before {
   content: "\e00b";
 }
@@ -220,4 +217,16 @@
 }
 .shore-icon-twitter:before {
   content: "\e03c";
+}
+.shore-icon-backend-dragndrop:before {
+  content: "\e00a";
+}
+.shore-icon-next:before {
+  content: "\e03d";
+}
+.shore-icon-resource:before {
+  content: "\e03e";
+}
+.shore-icon-time:before {
+  content: "\e03f";
 }
