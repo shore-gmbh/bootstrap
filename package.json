@@ -18,9 +18,9 @@
     "test-server": "live-server --open=test-page/index.html",
     "deploy-test-page": "cp -LRp test-page/ test-page-surge && rm -rf test-page-surge/less && cp dist/css/bootstrap*.min.css test-page-surge/ && htmlprocessor test-page-surge/index.html -o test-page-surge/index.html -d package.json && surge test-page-surge shore-bootstrap-theme.surge.sh",
     "build": "grunt dist",
-    "preversion": "[[ -z $(git status -s) ]] || (echo 'repo not clean!' && exit 1)",
     "postversion": "npm run build && git add dist && git commit -m 'add new build' && git push && git push --tags",
-    "prepublish": "npm run deploy-test-page"
+    "prepublish": "npm run deploy-test-page",
+    "release": "npm version prerelease && npm publish"
   },
   "style": "dist/css/bootstrap.css",
   "less": "less/bootstrap.less",
