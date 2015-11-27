@@ -55,21 +55,26 @@ to open the theme test page and start hacking the less files. The test-server wi
 npm run build
 ```
 
-### Publish on npm
-
-Increment the `shore.n` version in `package.json`, commit and push before
-
-```
-npm publish
-```
-
-You need to be logged in to npm with the `shore` user!
-
-### Deploy the test page on surge.sh
+### Deploy test page of current build to surge.sh
 
 ```
 npm run deploy-test-page
 ```
+
+### Release
+
+Means:
+- bump version to 3.3.5-shore.(n+1)
+- run build
+- git add/commit/push
+- deploy test page to [surge.sh](http://shore-bootstrap-theme.surge.sh)
+- publish on [npm](https://www.npmjs.com/package/@shore/bootstrap)
+
+```
+npm release
+```
+
+You need to be logged in to npm with the `shore` user!
 
 <hr>
 
