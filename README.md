@@ -71,7 +71,7 @@ Means:
 - publish on [npm](https://www.npmjs.com/package/@shore/bootstrap)
 
 ```
-npm release
+npm run release
 ```
 
 You need to be logged in to npm with the `shore` user!
