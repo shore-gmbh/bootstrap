@@ -65,6 +65,7 @@
     "load-grunt-tasks": "~3.2.0",
     "markdown-it": "^4.2.1",
     "npm-shrinkwrap": "^200.4.0",
+    "surge": "^0.17.7",
     "time-grunt": "^1.2.0"
   },
   "engines": {
