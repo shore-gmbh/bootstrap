@@ -44,7 +44,7 @@ to open the theme test page and start hacking the less files. The test-server wi
 
 * Go to [Fontastic](http://app.fontastic.me/#select/DodAuckJNKeGyhRNYdnd48)
 * Make sure **shore-icons** is selected (top-left, below Fontastic logo)
-* Select new icons</li>
+* Select new icons
 * Go to [Publish page](http://app.fontastic.me/#publish/font/DodAuckJNKeGyhRNYdnd48)
 * Click on **DOWNLOAD** button
 * Extract ZIP file and copy folder `shore-icons` to project root folder
@@ -57,24 +57,27 @@ npm run build
 
 ### Deploy test page of current build to surge.sh
 
+Ensure you have been added as a collaborator, please ask the FE team.
+
 ```
 npm run deploy-test-page
 ```
 
 ### Release
 
-Means:
-- bump version to 3.3.5-shore.(n+1)
-- run build
-- git add/commit/push
-- deploy test page to [surge.sh](http://shore-bootstrap-theme.surge.sh)
-- publish on [npm](https://www.npmjs.com/package/@shore/bootstrap)
+Ensure you are logged in as user 'shore' to npm.
 
 ```
 npm run release
 ```
 
-You need to be logged in to npm with the `shore` user!
+What's happening:
+- check publishing rights
+- bump version to 3.3.5-shore.(n+1)
+- run build
+- git add/commit/push
+- deploy test page to [surge.sh](http://shore-bootstrap-theme.surge.sh)
+- publish on [npm](https://www.npmjs.com/package/@shore/bootstrap)
 
 <hr>
 
