@@ -16,11 +16,13 @@
   "scripts": {
     "test": "grunt test",
     "test-server": "live-server --open=test-page/index.html",
+    "ensure-surge-collaborator": "surge list|grep shore-bootstrap-theme.surge.sh || (echo 'ERR: you are currently not a collaborator, pls contact FE team!' && exit 1)",
+    "ensure-shore-npm-user": "npm whoami|grep shore || (echo 'ERR: you are not logged in as user \"shore\" to npm. Pls contact FE team!' && exit 1)",
     "deploy-test-page": "cp -LRp test-page/ test-page-surge && rm -rf test-page-surge/less && cp dist/css/bootstrap*.min.css test-page-surge/ && htmlprocessor test-page-surge/index.html -o test-page-surge/index.html -d package.json && surge test-page-surge shore-bootstrap-theme.surge.sh",
     "build": "grunt dist",
-    "postversion": "npm run build && git add dist && git commit -m 'add new build' && git push && git push --tags",
-    "prepublish": "npm run deploy-test-page",
-    "release": "npm version prerelease && npm publish"
+    "build-n-push": "npm run build && git add dist && git commit -m 'add new build' && git push && git push --tags",
+    "prerelease": "npm run ensure-surge-collaborator && npm run ensure-shore-npm-user",
+    "release": "npm version prerelease && npm run build-n-push && npm run deploy-test-page && npm publish"
   },
   "style": "dist/css/bootstrap.css",
   "less": "less/bootstrap.less",
