@@ -500,6 +500,30 @@ input[type="radio"] .styled:checked + label::after {
 .shore-icon-time:before {
   content: "\e03f";
 }
+.shore-icon-backend-directory-status:before {
+  content: "\e040";
+}
+.shore-icon-backend-bday:before {
+  content: "\e041";
+}
+.shore-icon-backend-phone:before {
+  content: "\e042";
+}
+.shore-icon-backend-new-shift:before {
+  content: "\e043";
+}
+.shore-icon-backend-new-newsletter:before {
+  content: "\e044";
+}
+.shore-icon-backend-new-appointment:before {
+  content: "\e045";
+}
+.shore-icon-backend-new-customer:before {
+  content: "\e046";
+}
+.shore-icon-backend-new-message:before {
+  content: "\e047";
+}
 @font-face {
   font-family: "shore-icons";
   font-style: normal;
