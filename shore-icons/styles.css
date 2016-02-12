@@ -254,3 +254,45 @@
 .shore-icon-backend-new-message:before {
   content: "\e047";
 }
+.shore-icon-backend-edit:before {
+  content: "\e048";
+}
+.shore-icon-backend-fail:before {
+  content: "\e049";
+}
+.shore-icon-backend-image:before {
+  content: "\e04a";
+}
+.shore-icon-backend-info:before {
+  content: "\e04b";
+}
+.shore-icon-backend-mobile:before {
+  content: "\e04c";
+}
+.shore-icon-backend-draft:before {
+  content: "\e04d";
+}
+.shore-icon-backend-previous:before {
+  content: "\e04e";
+}
+.shore-icon-backend-planned:before {
+  content: "\e04f";
+}
+.shore-icon-backend-next:before {
+  content: "\e050";
+}
+.shore-icon-backend-subject:before {
+  content: "\e051";
+}
+.shore-icon-backend-success:before {
+  content: "\e052";
+}
+.shore-icon-backend-send-reminder:before {
+  content: "\e053";
+}
+.shore-icon-backend-safe:before {
+  content: "\e054";
+}
+.shore-icon-backend-refund:before {
+  content: "\e055";
+}
