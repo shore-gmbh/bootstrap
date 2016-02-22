@@ -48,6 +48,7 @@ to open the theme test page and start hacking the less files. The test-server wi
 * Go to [Publish page](http://app.fontastic.me/#publish/font/DodAuckJNKeGyhRNYdnd48)
 * Click on **DOWNLOAD** button
 * Extract ZIP file and copy folder `shore-icons` to project root folder
+* run `npm run -s fix-shore-icons-styles`
 
 ### Build
 

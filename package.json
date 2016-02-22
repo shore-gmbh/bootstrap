@@ -22,7 +22,8 @@
     "build": "grunt dist",
     "build-n-push": "npm run build && git add dist && git commit -m 'add new build' && git push && git push --tags",
     "prerelease": "npm run ensure-surge-collaborator && npm run ensure-shore-npm-user",
-    "release": "npm version prerelease && npm run build-n-push && npm run deploy-test-page && npm publish"
+    "release": "npm version prerelease && npm run build-n-push && npm run deploy-test-page && npm publish",
+    "fix-shore-icons-styles": "[ \"$(head -n 1 shore-icons/styles.css)\" = \"@charset \\\"UTF-8\\\";\" ] && sed -i \"\" -e 1,13d shore-icons/styles.css && echo 'done.' || echo 'was already fixed!'"
   },
   "style": "dist/css/bootstrap.css",
   "less": "less/bootstrap.less",
