@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
  * Shore Bootstrap 3 Theme
  * Copyright 2015 Shore GmbH
@@ -273,14 +272,6 @@ input[type="radio"] .styled:checked + label::after {
   outline: none;
   -webkit-box-shadow: 0 0 3pt 1pt #47a3d1;
           box-shadow: 0 0 3pt 1pt #47a3d1;
-}
-@font-face {
-  font-family: "shore-icons";
-  font-style: normal;
-  font-weight: normal;
-
-  src: url("fonts/shore-icons.eot");
-  src: url("fonts/shore-icons.eot?#iefix") format("embedded-opentype"), url("fonts/shore-icons.woff") format("woff"), url("fonts/shore-icons.ttf") format("truetype"), url("fonts/shore-icons.svg#shore-icons") format("svg");
 }
 [data-icon]:before {
   font-family: "shore-icons" !important;
