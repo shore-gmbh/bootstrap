@@ -1107,8 +1107,10 @@ a:focus {
 }
 a:focus {
   outline: thin dotted;
-  outline: 5px auto #47a3d1;
-  outline-offset: -2px;
+  /*outline: 5px auto @brand-primary;*/
+  /*outline-offset: -2px;*/
+  outline: thin dotted #c3c8c9;
+  outline-offset: 0;
 }
 figure {
   margin: 0;
@@ -2538,8 +2540,10 @@ input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
   outline: thin dotted;
-  outline: 5px auto #47a3d1;
-  outline-offset: -2px;
+  /*outline: 5px auto @brand-primary;*/
+  /*outline-offset: -2px;*/
+  outline: thin dotted #c3c8c9;
+  outline-offset: 0;
 }
 output {
   display: block;
@@ -3017,8 +3021,10 @@ select[multiple].input-lg {
 .btn:active.focus,
 .btn.active.focus {
   outline: thin dotted;
-  outline: 5px auto #47a3d1;
-  outline-offset: -2px;
+  /*outline: 5px auto @brand-primary;*/
+  /*outline-offset: -2px;*/
+  outline: thin dotted #c3c8c9;
+  outline-offset: 0;
 }
 .btn:hover,
 .btn:focus,

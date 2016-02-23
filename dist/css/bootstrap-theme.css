@@ -48,8 +48,10 @@
 .checkbox input[type="checkbox"]:focus + label::before,
 .checkbox input[type="radio"]:focus + label::before {
   outline: thin dotted;
-  outline: 5px auto #47a3d1;
-  outline-offset: -2px;
+  /*outline: 5px auto @brand-primary;*/
+  /*outline-offset: -2px;*/
+  outline: thin dotted #c3c8c9;
+  outline-offset: 0;
 }
 .checkbox input[type="checkbox"]:checked + label::after,
 .checkbox input[type="radio"]:checked + label::after {
@@ -165,8 +167,10 @@
 }
 .radio input[type="radio"]:focus + label::before {
   outline: thin dotted;
-  outline: 5px auto #47a3d1;
-  outline-offset: -2px;
+  /*outline: 5px auto @brand-primary;*/
+  /*outline-offset: -2px;*/
+  outline: thin dotted #c3c8c9;
+  outline-offset: 0;
 }
 .radio input[type="radio"]:checked + label::after {
   -webkit-transform: scale(1, 1);
