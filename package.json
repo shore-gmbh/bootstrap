@@ -23,7 +23,7 @@
     "build-n-push": "npm run -s build && git add dist && git commit -m 'add new build' && git push && git push --tags",
     "prerelease": "npm run -s ensure-surge-collaborator && npm run -s ensure-shore-npm-user",
     "release": "npm version prerelease && npm run -s build-n-push && npm run -s deploy-test-page && npm publish",
-    "fix-shore-icons-styles": "[ \"$(head -n 1 shore-icons/styles.css)\" = \"@charset \\\"UTF-8\\\";\" ] && sed -i \"\" -e 1,13d shore-icons/styles.css && echo 'done.' || echo 'was already fixed!'"
+    "generate-shore-icons-less": "sed -e 1,13d shore-icons/styles.css > less/shore-icons.less"
   },
   "style": "dist/css/bootstrap.css",
   "less": "less/bootstrap.less",

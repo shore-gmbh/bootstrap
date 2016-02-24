@@ -1,3 +1,16 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "shore-icons";
+  src:url("fonts/shore-icons.eot");
+  src:url("fonts/shore-icons.eot?#iefix") format("embedded-opentype"),
+    url("fonts/shore-icons.woff") format("woff"),
+    url("fonts/shore-icons.ttf") format("truetype"),
+    url("fonts/shore-icons.svg#shore-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
 
 [data-icon]:before {
   font-family: "shore-icons" !important;
