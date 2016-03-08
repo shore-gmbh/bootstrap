@@ -296,3 +296,18 @@
 .shore-icon-backend-refund:before {
   content: "\e055";
 }
+.shore-icon-backend-favorites:before {
+  content: "\e056";
+}
+.shore-icon-backend-payment-type:before {
+  content: "\e057";
+}
+.shore-icon-backend-notes:before {
+  content: "\e058";
+}
+.shore-icon-backend-payment-amount:before {
+  content: "\e059";
+}
+.shore-icon-backend-payment-card:before {
+  content: "\e05a";
+}
