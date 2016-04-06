@@ -96,7 +96,7 @@
   content: "\e009";
 }
 .shore-icon-backend-info:before {
-  content: "\e051";
+  content: "\e04b";
 }
 .shore-icon-backend-menu:before {
   content: "\e025";
@@ -105,10 +105,10 @@
   content: "\e040";
 }
 .shore-icon-backend-mobile:before {
-  content: "\e052";
+  content: "\e04c";
 }
 .shore-icon-backend-draft:before {
-  content: "\e053";
+  content: "\e04d";
 }
 .shore-icon-backend-nav-resources:before {
   content: "\e024";
@@ -168,19 +168,19 @@
   content: "\e043";
 }
 .shore-icon-backend-next:before {
-  content: "\e056";
+  content: "\e050";
 }
 .shore-icon-backend-new-newsletter:before {
   content: "\e044";
 }
 .shore-icon-backend-notes:before {
-  content: "\e05d";
+  content: "\e057";
 }
 .shore-icon-backend-payment-amount:before {
-  content: "\e05e";
+  content: "\e058";
 }
 .shore-icon-backend-payment-card:before {
-  content: "\e05f";
+  content: "\e059";
 }
 .shore-icon-backend-starred-solid:before {
   content: "\e02e";
@@ -192,16 +192,16 @@
   content: "\e00f";
 }
 .shore-icon-backend-send-reminder:before {
-  content: "\e059";
+  content: "\e053";
 }
 .shore-icon-backend-search:before {
   content: "\e012";
 }
 .shore-icon-backend-refund:before {
-  content: "\e05b";
+  content: "\e055";
 }
 .shore-icon-backend-safe:before {
-  content: "\e05a";
+  content: "\e054";
 }
 .shore-icon-backend-publish:before {
   content: "\e013";
@@ -210,22 +210,22 @@
   content: "\e016";
 }
 .shore-icon-backend-previous:before {
-  content: "\e054";
+  content: "\e04e";
 }
 .shore-icon-backend-planned:before {
-  content: "\e055";
+  content: "\e04f";
 }
 .shore-icon-backend-phone:before {
   content: "\e042";
 }
 .shore-icon-backend-payment-type:before {
-  content: "\e05c";
+  content: "\e056";
 }
 .shore-icon-backend-subject:before {
-  content: "\e057";
+  content: "\e051";
 }
 .shore-icon-backend-success:before {
-  content: "\e058";
+  content: "\e052";
 }
 .shore-icon-backend-waitinglist:before {
   content: "\e029";
@@ -294,13 +294,13 @@
   content: "\e03b";
 }
 .shore-icon-support-call:before {
-  content: "\e060";
+  content: "\e05a";
 }
 .shore-icon-support-email:before {
-  content: "\e061";
+  content: "\e05b";
 }
 .shore-icon-backend-image:before {
-  content: "\e050";
+  content: "\e04a";
 }
 .shore-icon-backend-bookable:before {
   content: "\e003";
@@ -312,8 +312,17 @@
   content: "\e01a";
 }
 .shore-icon-backend-feedback-negative:before {
-  content: "\e062";
+  content: "\e05c";
 }
 .shore-icon-backend-feedback-positive:before {
   content: "\e01c";
+}
+.shore-icon-backend-add-attachment:before {
+  content: "\e05d";
+}
+.shore-icon-backend-attachment-1:before {
+  content: "\e05e";
+}
+.shore-icon-backend-upload:before {
+  content: "\e05f";
 }
