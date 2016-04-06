@@ -304,283 +304,283 @@ input[type="radio"] .styled:checked + label::after {
   -moz-osx-font-smoothing: grayscale;
 }
 .shore-icon-backend-favorites:before {
-  content: "\e000";
+  content: "\e01d";
 }
 .shore-icon-backend-alternative:before {
   content: "\e001";
 }
 .shore-icon-attachment:before {
-  content: "\e002";
+  content: "\e000";
 }
 .shore-icon-backend-dragndrop:before {
-  content: "\e003";
-}
-.shore-icon-backend-edit:before {
-  content: "\e004";
-}
-.shore-icon-backend-expand:before {
-  content: "\e005";
-}
-.shore-icon-backend-attachment:before {
-  content: "\e006";
-}
-.shore-icon-backend-bday:before {
-  content: "\e007";
-}
-.shore-icon-backend-fail:before {
-  content: "\e008";
-}
-.shore-icon-backend-bookable:before {
-  content: "\e009";
-}
-.shore-icon-backend-cal-settings:before {
   content: "\e00a";
 }
-.shore-icon-backend-filter:before {
-  content: "\e00b";
-}
-.shore-icon-backend-filter-down:before {
-  content: "\e00c";
-}
-.shore-icon-backend-collapse:before {
-  content: "\e00d";
-}
-.shore-icon-backend-confirm:before {
-  content: "\e00e";
-}
-.shore-icon-backend-go2profile:before {
-  content: "\e00f";
-}
-.shore-icon-backend-delete:before {
-  content: "\e010";
-}
-.shore-icon-backend-filter-up:before {
-  content: "\e011";
-}
-.shore-icon-backend-image:before {
-  content: "\e012";
-}
-.shore-icon-backend-delete-02:before {
-  content: "\e013";
-}
-.shore-icon-backend-directory-bookable:before {
-  content: "\e014";
-}
-.shore-icon-backend-info:before {
-  content: "\e015";
-}
-.shore-icon-backend-menu:before {
-  content: "\e016";
-}
-.shore-icon-backend-directory-status:before {
-  content: "\e017";
-}
-.shore-icon-backend-mobile:before {
-  content: "\e018";
-}
-.shore-icon-backend-draft:before {
-  content: "\e019";
-}
-.shore-icon-backend-nav-resources:before {
-  content: "\e01a";
-}
-.shore-icon-backend-nav-partner-network-02:before {
-  content: "\e01b";
-}
-.shore-icon-backend-nav-partner-network-01:before {
-  content: "\e01c";
-}
-.shore-icon-backend-nav-open:before {
-  content: "\e01d";
-}
-.shore-icon-backend-nav-newsletter:before {
-  content: "\e01e";
-}
-.shore-icon-backend-nav-messages:before {
-  content: "\e01f";
-}
-.shore-icon-backend-nav-insights:before {
-  content: "\e020";
-}
-.shore-icon-backend-nav-feedback:before {
-  content: "\e021";
-}
-.shore-icon-backend-nav-dropdown:before {
-  content: "\e022";
-}
-.shore-icon-backend-nav-customers:before {
-  content: "\e023";
-}
-.shore-icon-backend-nav-close:before {
-  content: "\e024";
-}
-.shore-icon-backend-nav-branch:before {
-  content: "\e025";
-}
-.shore-icon-backend-nav-appointments:before {
-  content: "\e026";
-}
-.shore-icon-backend-nav-services:before {
-  content: "\e027";
-}
-.shore-icon-backend-nav-settings:before {
-  content: "\e028";
-}
-.shore-icon-backend-nav-shiftplan:before {
-  content: "\e029";
-}
-.shore-icon-backend-nav-subnavi:before {
-  content: "\e02a";
-}
-.shore-icon-backend-new-appointment:before {
-  content: "\e02b";
-}
-.shore-icon-backend-new-customer:before {
-  content: "\e02c";
-}
-.shore-icon-backend-new-message:before {
-  content: "\e02d";
-}
-.shore-icon-backend-new-shift:before {
-  content: "\e02e";
-}
-.shore-icon-backend-next:before {
-  content: "\e02f";
-}
-.shore-icon-backend-new-newsletter:before {
-  content: "\e030";
-}
-.shore-icon-backend-notes:before {
-  content: "\e031";
-}
-.shore-icon-backend-payment-amount:before {
-  content: "\e032";
-}
-.shore-icon-backend-payment-card:before {
-  content: "\e033";
-}
-.shore-icon-backend-starred-solid:before {
-  content: "\e034";
-}
-.shore-icon-backend-starred:before {
-  content: "\e035";
-}
-.shore-icon-backend-spinner:before {
-  content: "\e036";
-}
-.shore-icon-backend-send-reminder:before {
-  content: "\e037";
-}
-.shore-icon-backend-search:before {
-  content: "\e038";
-}
-.shore-icon-backend-refund:before {
-  content: "\e039";
-}
-.shore-icon-backend-safe:before {
-  content: "\e03a";
-}
-.shore-icon-backend-publish:before {
-  content: "\e03b";
-}
-.shore-icon-backend-print:before {
-  content: "\e03c";
-}
-.shore-icon-backend-previous:before {
-  content: "\e03d";
-}
-.shore-icon-backend-planned:before {
-  content: "\e03e";
-}
-.shore-icon-backend-phone:before {
-  content: "\e03f";
-}
-.shore-icon-backend-payment-type:before {
-  content: "\e040";
-}
-.shore-icon-backend-subject:before {
-  content: "\e041";
-}
-.shore-icon-backend-success:before {
-  content: "\e042";
-}
-.shore-icon-backend-waitinglist:before {
-  content: "\e043";
-}
-.shore-icon-file:before {
-  content: "\e044";
-}
-.shore-icon-message:before {
-  content: "\e045";
-}
-.shore-icon-mobile:before {
-  content: "\e046";
-}
-.shore-icon-next:before {
-  content: "\e047";
-}
-.shore-icon-recurring:before {
-  content: "\e049";
-}
-.shore-icon-resource:before {
-  content: "\e04a";
-}
-.shore-icon-time:before {
-  content: "\e04c";
-}
-.shore-icon-appointment-download:before {
-  content: "\e04d";
-}
-.shore-icon-twitter:before {
-  content: "\e04e";
-}
-.shore-icon-appointment-notification-info-01:before {
-  content: "\e04f";
-}
-.shore-icon-appointment-notification-info-02:before {
-  content: "\e050";
-}
-.shore-icon-appointment-notification-info-feedback:before {
-  content: "\e051";
-}
-.shore-icon-appointment-notification-info-lock:before {
-  content: "\e052";
-}
-.shore-icon-appointment-notification-info-tick:before {
-  content: "\e053";
-}
-.shore-icon-appointment-notification-info-x:before {
-  content: "\e054";
-}
-.shore-icon-appointment-share-email:before {
-  content: "\e055";
-}
-.shore-icon-close:before {
-  content: "\e056";
-}
-.shore-icon-facebook:before {
-  content: "\e057";
-}
-.shore-icon-minus:before {
-  content: "\e058";
-}
-.shore-icon-plus:before {
-  content: "\e059";
-}
-.shore-icon-tick:before {
-  content: "\e05a";
-}
-.shore-icon-backend-feedback-negative:before {
+.shore-icon-backend-edit:before {
   content: "\e048";
 }
-.shore-icon-backend-feedback-positive:before {
-  content: "\e04b";
+.shore-icon-backend-expand:before {
+  content: "\e00b";
 }
-.shore-icon-support-call:before {
+.shore-icon-backend-attachment:before {
+  content: "\e002";
+}
+.shore-icon-backend-bday:before {
+  content: "\e041";
+}
+.shore-icon-backend-fail:before {
+  content: "\e049";
+}
+.shore-icon-backend-cal-settings:before {
+  content: "\e004";
+}
+.shore-icon-backend-filter:before {
+  content: "\e00c";
+}
+.shore-icon-backend-filter-down:before {
+  content: "\e02c";
+}
+.shore-icon-backend-collapse:before {
+  content: "\e005";
+}
+.shore-icon-backend-confirm:before {
+  content: "\e006";
+}
+.shore-icon-backend-go2profile:before {
+  content: "\e026";
+}
+.shore-icon-backend-delete:before {
+  content: "\e007";
+}
+.shore-icon-backend-filter-up:before {
+  content: "\e02b";
+}
+.shore-icon-backend-delete-02:before {
+  content: "\e008";
+}
+.shore-icon-backend-directory-bookable:before {
+  content: "\e009";
+}
+.shore-icon-backend-info:before {
+  content: "\e051";
+}
+.shore-icon-backend-menu:before {
+  content: "\e025";
+}
+.shore-icon-backend-directory-status:before {
+  content: "\e040";
+}
+.shore-icon-backend-mobile:before {
+  content: "\e052";
+}
+.shore-icon-backend-draft:before {
+  content: "\e053";
+}
+.shore-icon-backend-nav-resources:before {
+  content: "\e024";
+}
+.shore-icon-backend-nav-partner-network-02:before {
+  content: "\e027";
+}
+.shore-icon-backend-nav-partner-network-01:before {
+  content: "\e02a";
+}
+.shore-icon-backend-nav-open:before {
+  content: "\e02d";
+}
+.shore-icon-backend-nav-newsletter:before {
+  content: "\e00d";
+}
+.shore-icon-backend-nav-messages:before {
+  content: "\e010";
+}
+.shore-icon-backend-nav-insights:before {
+  content: "\e011";
+}
+.shore-icon-backend-nav-feedback:before {
+  content: "\e014";
+}
+.shore-icon-backend-nav-dropdown:before {
+  content: "\e015";
+}
+.shore-icon-backend-nav-customers:before {
+  content: "\e018";
+}
+.shore-icon-backend-nav-branch:before {
+  content: "\e01f";
+}
+.shore-icon-backend-nav-appointments:before {
+  content: "\e020";
+}
+.shore-icon-backend-nav-services:before {
+  content: "\e021";
+}
+.shore-icon-backend-nav-settings:before {
+  content: "\e01e";
+}
+.shore-icon-backend-nav-subnavi:before {
+  content: "\e017";
+}
+.shore-icon-backend-new-appointment:before {
+  content: "\e045";
+}
+.shore-icon-backend-new-customer:before {
+  content: "\e046";
+}
+.shore-icon-backend-new-message:before {
+  content: "\e047";
+}
+.shore-icon-backend-new-shift:before {
+  content: "\e043";
+}
+.shore-icon-backend-next:before {
+  content: "\e056";
+}
+.shore-icon-backend-new-newsletter:before {
+  content: "\e044";
+}
+.shore-icon-backend-notes:before {
+  content: "\e05d";
+}
+.shore-icon-backend-payment-amount:before {
+  content: "\e05e";
+}
+.shore-icon-backend-payment-card:before {
+  content: "\e05f";
+}
+.shore-icon-backend-starred-solid:before {
+  content: "\e02e";
+}
+.shore-icon-backend-starred:before {
+  content: "\e00e";
+}
+.shore-icon-backend-spinner:before {
+  content: "\e00f";
+}
+.shore-icon-backend-send-reminder:before {
+  content: "\e059";
+}
+.shore-icon-backend-search:before {
+  content: "\e012";
+}
+.shore-icon-backend-refund:before {
   content: "\e05b";
 }
-.shore-icon-support-email:before {
+.shore-icon-backend-safe:before {
+  content: "\e05a";
+}
+.shore-icon-backend-publish:before {
+  content: "\e013";
+}
+.shore-icon-backend-print:before {
+  content: "\e016";
+}
+.shore-icon-backend-previous:before {
+  content: "\e054";
+}
+.shore-icon-backend-planned:before {
+  content: "\e055";
+}
+.shore-icon-backend-phone:before {
+  content: "\e042";
+}
+.shore-icon-backend-payment-type:before {
   content: "\e05c";
+}
+.shore-icon-backend-subject:before {
+  content: "\e057";
+}
+.shore-icon-backend-success:before {
+  content: "\e058";
+}
+.shore-icon-backend-waitinglist:before {
+  content: "\e029";
+}
+.shore-icon-file:before {
+  content: "\e028";
+}
+.shore-icon-message:before {
+  content: "\e023";
+}
+.shore-icon-mobile:before {
+  content: "\e022";
+}
+.shore-icon-next:before {
+  content: "\e03d";
+}
+.shore-icon-recurring:before {
+  content: "\e01b";
+}
+.shore-icon-resource:before {
+  content: "\e03e";
+}
+.shore-icon-time:before {
+  content: "\e03f";
+}
+.shore-icon-appointment-download:before {
+  content: "\e02f";
+}
+.shore-icon-twitter:before {
+  content: "\e03c";
+}
+.shore-icon-appointment-notification-info-01:before {
+  content: "\e030";
+}
+.shore-icon-appointment-notification-info-02:before {
+  content: "\e031";
+}
+.shore-icon-appointment-notification-info-feedback:before {
+  content: "\e032";
+}
+.shore-icon-appointment-notification-info-lock:before {
+  content: "\e033";
+}
+.shore-icon-appointment-notification-info-tick:before {
+  content: "\e034";
+}
+.shore-icon-appointment-notification-info-x:before {
+  content: "\e035";
+}
+.shore-icon-appointment-share-email:before {
+  content: "\e036";
+}
+.shore-icon-close:before {
+  content: "\e037";
+}
+.shore-icon-facebook:before {
+  content: "\e038";
+}
+.shore-icon-minus:before {
+  content: "\e039";
+}
+.shore-icon-plus:before {
+  content: "\e03a";
+}
+.shore-icon-tick:before {
+  content: "\e03b";
+}
+.shore-icon-support-call:before {
+  content: "\e060";
+}
+.shore-icon-support-email:before {
+  content: "\e061";
+}
+.shore-icon-backend-image:before {
+  content: "\e050";
+}
+.shore-icon-backend-bookable:before {
+  content: "\e003";
+}
+.shore-icon-backend-nav-close:before {
+  content: "\e019";
+}
+.shore-icon-backend-nav-shiftplan:before {
+  content: "\e01a";
+}
+.shore-icon-backend-feedback-negative:before {
+  content: "\e062";
+}
+.shore-icon-backend-feedback-positive:before {
+  content: "\e01c";
 }
 @font-face {
   font-family: "shore-icons";
