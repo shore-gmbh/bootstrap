@@ -137,9 +137,6 @@
 .shore-icon-backend-nav-dropdown:before {
   content: "\e015";
 }
-.shore-icon-backend-nav-customers:before {
-  content: "\e018";
-}
 .shore-icon-backend-nav-branch:before {
   content: "\e01f";
 }
@@ -248,9 +245,6 @@
 .shore-icon-resource:before {
   content: "\e03e";
 }
-.shore-icon-time:before {
-  content: "\e03f";
-}
 .shore-icon-appointment-download:before {
   content: "\e02f";
 }
@@ -325,4 +319,13 @@
 }
 .shore-icon-backend-upload:before {
   content: "\e05f";
+}
+.shore-icon-time:before {
+  content: "\e018";
+}
+.shore-icon-backend-nav-customers:before {
+  content: "\e03f";
+}
+.shore-icon-backend-nav-employees-1:before {
+  content: "\e061";
 }
