@@ -402,9 +402,6 @@ input[type="radio"] .styled:checked + label::after {
 .shore-icon-backend-nav-dropdown:before {
   content: "\e015";
 }
-.shore-icon-backend-nav-customers:before {
-  content: "\e018";
-}
 .shore-icon-backend-nav-branch:before {
   content: "\e01f";
 }
@@ -513,9 +510,6 @@ input[type="radio"] .styled:checked + label::after {
 .shore-icon-resource:before {
   content: "\e03e";
 }
-.shore-icon-time:before {
-  content: "\e03f";
-}
 .shore-icon-appointment-download:before {
   content: "\e02f";
 }
@@ -590,6 +584,15 @@ input[type="radio"] .styled:checked + label::after {
 }
 .shore-icon-backend-upload:before {
   content: "\e05f";
+}
+.shore-icon-time:before {
+  content: "\e018";
+}
+.shore-icon-backend-nav-customers:before {
+  content: "\e03f";
+}
+.shore-icon-backend-nav-employees:before {
+  content: "\e060";
 }
 @font-face {
   font-family: "shore-icons";
