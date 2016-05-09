@@ -58,6 +58,17 @@
   font-family: "shore-icons";
   content: "\e03b";
 }
+.checkbox input[type="checkbox"]:indeterminate + label::after,
+.checkbox input[type="radio"]:indeterminate + label::after {
+  display: block;
+  width: 10px;
+  height: 3px;
+  margin-top: 7px;
+  margin-left: -16.5px;
+  content: " ";
+  background-color: #555;
+  border-radius: 2px;
+}
 .checkbox input[type="checkbox"]:disabled + label,
 .checkbox input[type="radio"]:disabled + label {
   opacity: .65;
@@ -117,6 +128,51 @@
 .checkbox-success input[type="checkbox"]:checked + label::after,
 .checkbox-success input[type="radio"]:checked + label::after {
   color: #fff;
+}
+.checkbox-primary input[type="checkbox"]:indeterminate + label::before,
+.checkbox-primary input[type="radio"]:indeterminate + label::before {
+  background-color: #47a3d1;
+  border-color: #47a3d1;
+}
+.checkbox-primary input[type="checkbox"]:indeterminate + label::after,
+.checkbox-primary input[type="radio"]:indeterminate + label::after {
+  background-color: #fff;
+}
+.checkbox-danger input[type="checkbox"]:indeterminate + label::before,
+.checkbox-danger input[type="radio"]:indeterminate + label::before {
+  background-color: #e96d6d;
+  border-color: #e96d6d;
+}
+.checkbox-danger input[type="checkbox"]:indeterminate + label::after,
+.checkbox-danger input[type="radio"]:indeterminate + label::after {
+  background-color: #fff;
+}
+.checkbox-info input[type="checkbox"]:indeterminate + label::before,
+.checkbox-info input[type="radio"]:indeterminate + label::before {
+  background-color: #23b0a4;
+  border-color: #23b0a4;
+}
+.checkbox-info input[type="checkbox"]:indeterminate + label::after,
+.checkbox-info input[type="radio"]:indeterminate + label::after {
+  background-color: #fff;
+}
+.checkbox-warning input[type="checkbox"]:indeterminate + label::before,
+.checkbox-warning input[type="radio"]:indeterminate + label::before {
+  background-color: #f69028;
+  border-color: #f69028;
+}
+.checkbox-warning input[type="checkbox"]:indeterminate + label::after,
+.checkbox-warning input[type="radio"]:indeterminate + label::after {
+  background-color: #fff;
+}
+.checkbox-success input[type="checkbox"]:indeterminate + label::before,
+.checkbox-success input[type="radio"]:indeterminate + label::before {
+  background-color: #b3c733;
+  border-color: #b3c733;
+}
+.checkbox-success input[type="checkbox"]:indeterminate + label::after,
+.checkbox-success input[type="radio"]:indeterminate + label::after {
+  background-color: #fff;
 }
 .radio {
   padding-left: 20px;
@@ -234,8 +290,8 @@
 }
 input[type="checkbox"].styled:checked + label:after,
 input[type="radio"].styled:checked + label:after {
-  font-family: 'FontAwesome';
-  content: "\f00c";
+  font-family: "shore-icons";
+  content: "\e03b";
 }
 input[type="checkbox"] .styled:checked + label::before,
 input[type="radio"] .styled:checked + label::before {
@@ -744,8 +800,8 @@ legend {
 }
 .panel-overlay {
   margin: 0;
-  border-top-left-radius: 3px * 2;
-  border-top-right-radius: 3px * 2;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
