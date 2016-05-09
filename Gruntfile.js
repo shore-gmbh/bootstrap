@@ -164,7 +164,7 @@ module.exports = function (grunt) {
     less: {
       compileCore: {
         options: {
-          strictMath: true,
+          strictMath: false,
           sourceMap: true,
           outputSourceFiles: true,
           sourceMapURL: '<%= pkg.name %>.css.map',
@@ -175,7 +175,7 @@ module.exports = function (grunt) {
       },
       compileTheme: {
         options: {
-          strictMath: true,
+          strictMath: false,
           sourceMap: true,
           outputSourceFiles: true,
           sourceMapURL: '<%= pkg.name %>-theme.css.map',
