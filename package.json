@@ -22,7 +22,8 @@
     "build-n-push": "npm run -s build && git add dist && git commit -m 'add new build' && git push && git push --tags",
     "prerelease": "npm run -s ensure-surge-collaborator",
     "release": "npm version prerelease && npm run -s build-n-push && npm run -s deploy-test-page && npm publish",
-    "generate-shore-icons-less": "sed -e 1,13d shore-icons/styles.css > less/shore-icons.less"
+    "generate-shore-icons-less": "sed -e 1,13d shore-icons/styles.css > less/shore-icons.less",
+    "fontastic-cleanup": "phantomjs bin/cleanup_font_mapping.js"
   },
   "style": "dist/css/bootstrap.css",
   "less": "less/bootstrap.less",
@@ -67,6 +68,7 @@
     "load-grunt-tasks": "~3.2.0",
     "markdown-it": "^4.2.1",
     "npm-shrinkwrap": "^200.4.0",
+    "phantomjs": "^2.1.7",
     "surge": "^0.17.7",
     "time-grunt": "^1.2.0"
   },
