@@ -887,6 +887,9 @@ input[type="radio"] .styled:checked + label::after {
 .shore-icon-backend-delete:before {
   content: "\e007";
 }
+.shore-icon-backend-messenger-videocall:before {
+  content: "\e061";
+}
 @font-face {
   font-family: "shore-icons";
   font-style: normal;
