@@ -10,6 +10,7 @@
 
 @import "variables.less";
 @import "mixins.less";
+@import "colors.less";
 
 //
 // Load and theme awesome-bootstrap-checkbox
@@ -579,7 +580,6 @@ blockquote {
 // text input label
 .control-label {
   font-size: 11px;
-  text-transform: uppercase;
   font-weight: normal;
   color: @gray;
   margin-bottom: 0;
@@ -606,6 +606,7 @@ blockquote {
   border-left: none;
   border-right: none;
   .box-shadow(none);
+  &:hover:not([disabled]),
   &:focus {
     .box-shadow(none);
     border-width: 2px;
@@ -613,6 +614,8 @@ blockquote {
   }
   &[disabled] {
     .opacity(.5);
+    border-bottom-color: @gray-text;
+    border-bottom-style: dashed;
   }
   padding: 6px 0;
 }
