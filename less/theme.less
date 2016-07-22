@@ -607,7 +607,7 @@ blockquote {
   border-left: none;
   border-right: none;
   .box-shadow(none);
-  &:hover,
+  &:hover:not([disabled]),
   &:focus {
     .box-shadow(none);
     border-width: 2px;
@@ -615,6 +615,8 @@ blockquote {
   }
   &[disabled] {
     .opacity(.5);
+    border-bottom-color: @gray-text;
+    border-bottom-style: dashed;
   }
   padding: 6px 0;
 }
