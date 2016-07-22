@@ -1,0 +1,118 @@
+@import "variables.less";
+
+@colors: gray, gray-dark, gray-darker;
+
+.color-test {
+  display: inline-block;
+  width: 10em;
+  padding: 1em;
+  text-align: center;
+  color: white;
+  margin: .2em;
+  border: 1px solid @gray-line;
+
+  &::before,
+  &::after { display: block; }
+
+  &-gray {
+    background-color: @gray;
+    &::before { content: "gray"; }
+    &::after { content: "@{gray}"; }
+  }
+
+  &-gray-dark {
+    background-color: @gray-dark;
+    &::before { content: "gray-dark"; }
+    &::after { content: "@{gray-dark}"; }
+  }
+
+  &-gray-darker {
+    background-color: @gray-darker;
+    &::before { content: "gray-darker"; }
+    &::after { content: "@{gray-darker}"; }
+  }
+
+  &-gray-text {
+    background-color: @gray-text;
+    &::before { content: "gray-text"; }
+    &::after { content: "@{gray-text}"; }
+  }
+
+  &-gray-mute {
+    background-color: @gray-mute;
+    &::before { content: "gray-mute"; }
+    &::after { content: "@{gray-mute}"; }
+  }
+
+  &-gray-line {
+    background-color: @gray-line;
+    color: black;
+    &::before { content: "gray-line"; }
+    &::after { content: "@{gray-line}"; }
+  }
+
+  &-gray-light {
+    background-color: @gray-light;
+    color: black;
+    &::before { content: "gray-light"; }
+    &::after { content: "@{gray-light}"; }
+  }
+
+  &-gray-divisor {
+    background-color: @gray-divisor;
+    color: black;
+    &::before { content: "gray-divisor"; }
+    &::after { content: "@{gray-divisor}"; }
+  }
+
+  &-gray-bg {
+    background-color: @gray-bg;
+    color: black;
+    &::before { content: "gray-bg"; }
+    &::after { content: "@{gray-bg}"; }
+  }
+
+  &-gray-lighter {
+    background-color: @gray-lighter;
+    color: black;
+    &::before { content: "gray-lighter"; }
+    &::after { content: "@{gray-lighter}"; }
+  }
+
+  &-brand-primary {
+    background-color: @brand-primary;
+    &::before { content: "brand-primary"; }
+    &::after { content: "@{brand-primary}"; }
+  }
+
+  &-brand-secondary {
+    background-color: @brand-secondary;
+    &::before { content: "brand-secondary"; }
+    &::after { content: "@{brand-secondary}"; }
+  }
+
+  &-brand-success {
+    background-color: @brand-success;
+    &::before { content: "brand-success"; }
+    &::after { content: "@{brand-success}"; }
+  }
+
+  &-brand-info {
+    background-color: @brand-info;
+    &::before { content: "brand-info"; }
+    &::after { content: "@{brand-info}"; }
+  }
+
+  &-brand-warning {
+    background-color: @brand-warning;
+    &::before { content: "brand-warning"; }
+    &::after { content: "@{brand-warning}"; }
+  }
+
+  &-brand-danger {
+    background-color: @brand-danger;
+    &::before { content: "brand-danger"; }
+    &::after { content: "@{brand-danger}"; }
+  }
+}
+
