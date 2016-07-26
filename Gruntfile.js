@@ -183,6 +183,17 @@ module.exports = function (grunt) {
         },
         src: 'less/theme.less',
         dest: 'dist/css/<%= pkg.name %>-theme.css'
+      },
+      compileTestPage: {
+        options: {
+          strictMath: false,
+          sourceMap: true,
+          outputSourceFiles: true,
+          sourceMapURL: 'test-page.css.map',
+          sourceMapFilename: 'dist/css/test-page.css.map'
+        },
+        src: 'less/test-page.less',
+        dest: 'dist/css/test-page.css'
       }
     },
 
@@ -248,6 +259,10 @@ module.exports = function (grunt) {
       minifyTheme: {
         src: 'dist/css/<%= pkg.name %>-theme.css',
         dest: 'dist/css/<%= pkg.name %>-theme.min.css'
+      },
+      minifyTestPage: {
+        src: 'dist/css/test-page.css',
+        dest: 'dist/css/test-page.min.css'
       },
       docs: {
         src: [
@@ -482,8 +497,8 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-js', ['concat', 'uglify:core', 'commonjs']);
 
   // CSS distribution task.
-  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileTheme']);
-  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:theme', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyTheme']);
+  grunt.registerTask('less-compile', ['less:compileCore', 'less:compileTheme', 'less:compileTestPage']);
+  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:theme', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyTheme', 'cssmin:minifyTestPage']);
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);
