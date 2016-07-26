@@ -17,7 +17,7 @@
     "test": "grunt test",
     "test-server": "live-server --open=test-page/index.html",
     "ensure-surge-collaborator": "surge list|grep shore-bootstrap-theme.surge.sh || (echo 'ERR: you are currently not a collaborator, pls contact FE team!' && exit 1)",
-    "deploy-test-page": "cp -LRp test-page/ test-page-surge && rm -rf test-page-surge/less && cp dist/css/bootstrap*.min.css test-page-surge/ && htmlprocessor test-page-surge/index.html -o test-page-surge/index.html -d package.json && surge test-page-surge shore-bootstrap-theme.surge.sh",
+    "deploy-test-page": "cp -LRp test-page/ test-page-surge && rm -rf test-page-surge/less && cp dist/css/*.min.css test-page-surge/ && htmlprocessor test-page-surge/index.html -o test-page-surge/index.html -d package.json && surge test-page-surge shore-bootstrap-theme.surge.sh",
     "build": "grunt dist",
     "build-n-push": "npm run -s build && git add dist && git commit -m 'add new build' && git push && git push --tags",
     "prerelease": "npm run -s ensure-surge-collaborator",
