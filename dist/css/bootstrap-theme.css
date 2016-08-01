@@ -1467,7 +1467,6 @@ blockquote .small:before {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-.form-control:hover:not([disabled]),
 .form-control:focus {
   padding-bottom: 5px;
   border-width: 2px;
@@ -1476,8 +1475,6 @@ blockquote .small:before {
 }
 .form-control[disabled] {
   filter: alpha(opacity=50);
-  border-bottom-color: #82888a;
-  border-bottom-style: dashed;
   opacity: .5;
 }
 .input-group-addon {
