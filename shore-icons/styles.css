@@ -605,3 +605,6 @@
 .shore-icon-customer:before {
   content: "\e069";
 }
+.shore-icon-backend-lock:before {
+  content: "\e06a";
+}
