@@ -926,6 +926,9 @@ input[type="radio"] .styled:checked + label::after {
 .shore-icon-customer:before {
   content: "\e069";
 }
+.shore-icon-backend-lock:before {
+  content: "\e06a";
+}
 @font-face {
   font-family: "shore-icons";
   font-style: normal;
