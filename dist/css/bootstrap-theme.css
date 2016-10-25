@@ -653,9 +653,6 @@ input[type="radio"] .styled:checked + label::after {
 .shore-icon-backend-nav-services:before {
   content: "\e021";
 }
-.shore-icon-backend-nav-settings:before {
-  content: "\e01e";
-}
 .shore-icon-backend-nav-shiftplan:before {
   content: "\e01a";
 }
@@ -928,6 +925,9 @@ input[type="radio"] .styled:checked + label::after {
 }
 .shore-icon-backend-lock:before {
   content: "\e06a";
+}
+.shore-icon-backend-nav-settings:before {
+  content: "\e01e";
 }
 @font-face {
   font-family: "shore-icons";

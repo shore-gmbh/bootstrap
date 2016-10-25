@@ -332,9 +332,6 @@
 .shore-icon-backend-nav-services:before {
   content: "\e021";
 }
-.shore-icon-backend-nav-settings:before {
-  content: "\e01e";
-}
 .shore-icon-backend-nav-shiftplan:before {
   content: "\e01a";
 }
@@ -607,4 +604,7 @@
 }
 .shore-icon-backend-lock:before {
   content: "\e06a";
+}
+.shore-icon-backend-nav-settings:before {
+  content: "\e01e";
 }
