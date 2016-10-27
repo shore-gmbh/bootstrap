@@ -929,6 +929,12 @@ input[type="radio"] .styled:checked + label::after {
 .shore-icon-backend-nav-settings:before {
   content: "\e01e";
 }
+.shore-icon-actions-logout:before {
+  content: "\e06b";
+}
+.shore-icon-actions-helpcenter:before {
+  content: "\e06c";
+}
 @font-face {
   font-family: "shore-icons";
   font-style: normal;
