@@ -155,11 +155,11 @@ table {
 // inheritance to nested tables.
 
 // Generate the contextual variants
-.table-row-variant(active; @table-bg-active);
-.table-row-variant(success; @state-success-bg);
-.table-row-variant(info; @state-info-bg);
-.table-row-variant(warning; @state-warning-bg);
-.table-row-variant(danger; @state-danger-bg);
+.table-row-variant(active; lighten(@table-bg-active, 4%));
+.table-row-variant(success; lighten(@state-success-bg, 3%));
+.table-row-variant(info; lighten(@state-info-bg, 2%));
+.table-row-variant(warning; lighten(@state-warning-bg, 2%));
+.table-row-variant(danger; lighten(@state-danger-bg, 3%));
 
 
 // Responsive tables

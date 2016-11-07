@@ -12,22 +12,22 @@
 
 @gray-dark:              #3e4a54;
 @gray-text:              #82888a;
-@gray-mute:              #b0b5bc;
-@gray:                   #c3c8c9;
-@gray-line:              #d4d4d4;
-@gray-light:             #dedfe1;
-@gray-divisor:           #ededed;
-@gray-bg:                #fcfcfc;
-@gray-lighter:           @gray-bg;
+@gray-mute:              #747b81;
+@gray:                   #98a1ae;
+@gray-line:              #e6e8ed;
+@gray-light:             #eef0f4;
+@gray-divisor:           @gray-light;
+@gray-bg:                @gray-light;
+@gray-lighter:           #f5f7fa;
 
-@brand-primary:          #47a3d1; // from DEFAULT
+@brand-primary:          #0af; // from DEFAULT
 @brand-secondary:        #616b78; // from PRIMARY
 @brand-success:          #b3c733;
-@brand-info:             #23b0a4;
-@brand-warning:          #f69028;
-@brand-danger:           #e96d6d;
+@brand-info:             #19d0d2;
+@brand-warning:          #ff8976;
+@brand-danger:           #ff6262;
 
-@bg-hover:               lighten(@brand-primary, 40%);
+@bg-hover:               lighten(@brand-primary, 47%);
 
 @disabled-opacity:       .3;
 
@@ -143,7 +143,7 @@
 @table-bg-accent:               @gray-lighter;
 //** Background color used for `.table-hover`.
 @table-bg-hover:                @bg-hover;
-@table-bg-active:               @table-bg-hover;
+@table-bg-active:               lighten(@brand-primary, 43%);
 
 //** Border color for table and cell borders.
 @table-border-color:            @gray-divisor;
@@ -203,7 +203,7 @@
 //** Text color for `<input>`s
 @input-color:                    @text-color;
 //** `<input>` border color
-@input-border:                   @gray-light;
+@input-border:                   @gray-line;
 
 // TODO: Rename `@input-border-radius` to `@input-border-radius-base` in v4
 //** Default `.form-control` border radius
@@ -516,15 +516,15 @@
 @state-success-border:           transparent;
 
 @state-info-text:                darken(@brand-info, 0%);
-@state-info-bg:                  lighten(@brand-info, 53%);
+@state-info-bg:                  lighten(@brand-info, 48%);
 @state-info-border:              transparent;
 
 @state-warning-text:             darken(@brand-warning, 0%);
-@state-warning-bg:               lighten(@brand-warning, 38%);
+@state-warning-bg:               lighten(@brand-warning, 23%);
 @state-warning-border:           transparent;
 
 @state-danger-text:              darken(@brand-danger, 0%);
-@state-danger-bg:                lighten(@brand-danger, 30%);
+@state-danger-bg:                lighten(@brand-danger, 26%);
 @state-danger-border:            transparent;
 
 
