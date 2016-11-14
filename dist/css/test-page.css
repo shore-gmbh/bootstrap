@@ -106,16 +106,6 @@
 .color-test-gray-lighter::after {
   content: "#f5f7fa";
 }
-.color-test-gray-icon {
-  color: black;
-  background-color: #b0b5bc;
-}
-.color-test-gray-icon::before {
-  content: "gray-icon";
-}
-.color-test-gray-icon::after {
-  content: "#b0b5bc";
-}
 .color-test-brand-primary {
   background-color: #0af;
 }
