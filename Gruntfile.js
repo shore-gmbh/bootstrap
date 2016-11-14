@@ -161,6 +161,14 @@ module.exports = function (grunt) {
       files: 'js/tests/index.html'
     },
 
+    lessToSass: {
+      variables: {
+        files: {
+          'sass/variables.sass': ['less/variables.less'],
+        },
+      }
+    },
+
     less: {
       compileCore: {
         options: {
@@ -498,7 +506,7 @@ module.exports = function (grunt) {
 
   // CSS distribution task.
   grunt.registerTask('less-compile', ['less:compileCore', 'less:compileTheme', 'less:compileTestPage']);
-  grunt.registerTask('dist-css', ['less-compile', 'autoprefixer:core', 'autoprefixer:theme', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyTheme', 'cssmin:minifyTestPage']);
+  grunt.registerTask('dist-css', ['less-compile', 'lessToSass:variables', 'autoprefixer:core', 'autoprefixer:theme', 'csscomb:dist', 'cssmin:minifyCore', 'cssmin:minifyTheme', 'cssmin:minifyTestPage']);
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'copy:fonts', 'dist-js']);
