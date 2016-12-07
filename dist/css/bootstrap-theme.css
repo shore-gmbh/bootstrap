@@ -530,9 +530,6 @@ input[type="radio"] .styled:checked + label::after {
 .shore-icon-status-circle:before {
   content: "\e261";
 }
-.shore-icon-action-sheet-edit:before {
-  content: "\e258";
-}
 .shore-icon-status-confirm:before {
   content: "\e263";
 }
@@ -631,9 +628,6 @@ input[type="radio"] .styled:checked + label::after {
 }
 .shore-icon-backend-nav-insights:before {
   content: "\e011";
-}
-.shore-icon-backend-nav-messages:before {
-  content: "\e010";
 }
 .shore-icon-backend-nav-newsletter:before {
   content: "\e00d";
@@ -934,6 +928,15 @@ input[type="radio"] .styled:checked + label::after {
 }
 .shore-icon-actions-helpcenter:before {
   content: "\e06c";
+}
+.shore-icon-backend-nav-messages:before {
+  content: "\e010";
+}
+.shore-icon-action-sheet-edit:before {
+  content: "\e06d";
+}
+.shore-icon-a-warning:before {
+  content: "\e06e";
 }
 @font-face {
   font-family: "shore-icons";
