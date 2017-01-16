@@ -725,9 +725,6 @@ input[type="radio"] .styled:checked + label::after {
 .shore-icon-backend-subject:before {
   content: "\e051";
 }
-.shore-icon-backend-success:before {
-  content: "\e052";
-}
 .shore-icon-backend-upload:before {
   content: "\e05f";
 }
@@ -935,8 +932,20 @@ input[type="radio"] .styled:checked + label::after {
 .shore-icon-action-sheet-edit:before {
   content: "\e06d";
 }
+.shore-icon-backend-success:before {
+  content: "\e052";
+}
 .shore-icon-a-warning:before {
   content: "\e06e";
+}
+.shore-icon-calendar-notification:before {
+  content: "\e06f";
+}
+.shore-icon-no-appointments:before {
+  content: "\e070";
+}
+.shore-icon-no-resource:before {
+  content: "\e071";
 }
 @font-face {
   font-family: "shore-icons";
