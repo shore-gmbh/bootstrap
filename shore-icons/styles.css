@@ -113,9 +113,6 @@
 .shore-icon-delete-02:before {
   content: "\e225";
 }
-.shore-icon-expand:before {
-  content: "\e226";
-}
 .shore-icon-hamburger:before {
   content: "\e227";
 }
@@ -137,20 +134,8 @@
 .shore-icon-mobile-calendar:before {
   content: "\e233";
 }
-.shore-icon-mobile-customer-female:before {
-  content: "\e234";
-}
-.shore-icon-mobile-customer-male:before {
-  content: "\e235";
-}
 .shore-icon-mobile-search:before {
   content: "\e236";
-}
-.shore-icon-mobile-responsability:before {
-  content: "\e237";
-}
-.shore-icon-mobile-resource:before {
-  content: "\e238";
 }
 .shore-icon-mobile-phone:before {
   content: "\e239";
@@ -530,9 +515,6 @@
 .shore-icon-recurring:before {
   content: "\e01b";
 }
-.shore-icon-backend-confirm:before {
-  content: "\e006";
-}
 .shore-icon-backend-delete:before {
   content: "\e007";
 }
@@ -617,12 +599,21 @@
 .shore-icon-a-warning:before {
   content: "\e06e";
 }
-.shore-icon-calendar-notification:before {
+.shore-icon-backend-confirm:before {
+  content: "\e006";
+}
+.shore-icon-filter:before {
   content: "\e06f";
 }
-.shore-icon-no-appointments:before {
+.shore-icon-service-blog:before {
   content: "\e070";
 }
-.shore-icon-no-resource:before {
+.shore-icon-calendar-notification:before {
   content: "\e071";
+}
+.shore-icon-no-appointment:before {
+  content: "\e072";
+}
+.shore-icon-no-resource:before {
+  content: "\e073";
 }
