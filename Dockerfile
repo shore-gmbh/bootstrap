@@ -16,6 +16,7 @@ WORKDIR /application
 
 RUN \
 apk add --no-cache git openssh-client && \
+git remote set-url origin ssh://git@bitbucket.shore.com/fe/bootstrap.git && \
 git config --global user.email "it-bot@shore.com" && \
 git config --global user.name "IT Bot" && \
 npm install && \
