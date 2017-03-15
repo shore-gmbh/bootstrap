@@ -27,4 +27,4 @@ npm-cli-login \
 -p ${bamboo_NPM_PASSWORD} \
 -e ${bamboo_NPM_EMAIL}
 
-CMD ["npm", "run", "release"]
+CMD ["npm", "run", "build"]
