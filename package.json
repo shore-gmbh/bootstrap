@@ -15,6 +15,8 @@
   "author": "Twitter, Inc.",
   "scripts": {
     "test": "grunt test",
+    "test:tap": "echo '1..1\nok 1 - no tests'",
+    "lint:tap": "echo '1..1\nok 1 - no linting'",
     "test-server": "live-server --open=test-page/index.html",
     "ensure-surge-collaborator": "surge list|grep shore-bootstrap-theme.surge.sh || (echo 'ERR: you are currently not a collaborator, pls contact FE team!' && exit 1)",
     "deploy-test-page": "cp -LRp test-page/ test-page-surge && rm -rf test-page-surge/less && cp dist/css/*.min.css test-page-surge/ && htmlprocessor test-page-surge/index.html -o test-page-surge/index.html -d package.json && surge test-page-surge shore-bootstrap-theme.surge.sh",
