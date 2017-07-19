@@ -15,8 +15,6 @@
   "author": "Twitter, Inc.",
   "scripts": {
     "test": "grunt test",
-    "test:tap": "echo '1..1\nok 1 - no tests'",
-    "lint:tap": "echo '1..1\nok 1 - no linting'",
     "test-server": "live-server --open=test-page/index.html",
     "build": "grunt dist && cat dist/css/bootstrap.min.css dist/css/bootstrap-theme.min.css > dist/css/bootstrap-with-theme.min.css",
     "build-n-push": "npm run -s build && git add dist && git commit -m 'add new build' && git push && git push --tags",
