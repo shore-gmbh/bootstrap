@@ -27,7 +27,7 @@ jobs:
       - run:
           name: build
           # circle bug prevents string substitution of env vars move this outside once it works
-          command: CDN_BASE_URL="//assets-cdn.shore.com/${CIRCLE_PROJECT_REPONAME}/${CIRCLE_BRANCH/\//-}/0${CIRCLE_BUILD_NUM}/" npm run build
+          command: npm run build:circleci
       - deploy:
           command: |
             # deployment to build num folder (cache forever)

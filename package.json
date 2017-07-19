@@ -25,7 +25,10 @@
     "prerelease": "npm run -s ensure-surge-collaborator",
     "release": "npm version prerelease && npm run -s build-n-push && npm run -s deploy-test-page && npm publish",
     "generate-shore-icons-less": "sed -e 1,13d shore-icons/styles.css > less/shore-icons.less",
-    "fontastic-cleanup": "phantomjs bin/cleanup-font-mapping.js"
+    "fontastic-cleanup": "phantomjs bin/cleanup-font-mapping.js",
+
+    "build:circleci": "npm run build",
+    "postbuild:circleci": "cp -LRp test-page/ dist/test-page && rm -rf dist/test-page/less && cp dist/css/*.min.css dist/test-page/ && htmlprocessor dist/test-page/index.html -o dist/test-page/index.html -d package.json"
   },
   "style": "dist/css/bootstrap.css",
   "less": "less/bootstrap.less",
