@@ -58,28 +58,17 @@ to open the theme test page and start hacking the less files. The test-server wi
 npm run build
 ```
 
-### Deploy test page of current build to surge.sh
+### Publishing on NPM
 
-Ensure you have been added as a collaborator, please ask the FE team.
-
-```
-npm run deploy-test-page
-```
-
-### Release
-
-Ensure you are logged in as user 'shore' to npm.
+This will be called by the CI server after `npm run build` only on branch `shore-bootstrap3`.
 
 ```
-npm run release
+npm run publish
 ```
 
 What's happening:
-- check publishing rights
 - bump version to 3.3.5-shore.(n+1)
-- run build
-- git add/commit/push
-- deploy test page to [surge.sh](http://shore-bootstrap-theme.surge.sh)
+- git push (with tags)
 - publish on [npm](https://www.npmjs.com/package/@shore/bootstrap)
 
 <hr>
