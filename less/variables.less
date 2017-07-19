@@ -11,24 +11,24 @@
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
 
 @gray-dark:              #3e4a54;
-@gray-text:              #82888a;
+@gray-text:              #909497;
 @gray-mute:              #b0b5bc;
 @gray:                   #c3c8c9;
 @gray-line:              #d4d4d4;
-@gray-light:             #dedfe1;
+@gray-light:             #e5e7e9;
 @gray-divisor:           #ededed;
 @gray-bg:                #fcfcfc;
 @gray-lighter:           @gray-bg;
 @gray-icon:              #b0b5bc;
 
-@brand-primary:          #47a3d1; // from DEFAULT
-@brand-secondary:        #616b78; // from PRIMARY
-@brand-success:          #b3c733;
-@brand-info:             #23b0a4;
-@brand-warning:          #f69028;
-@brand-danger:           #e96d6d;
+@brand-primary:          #00d0be; // from DEFAULT
+@brand-secondary:        #797d7f; // from PRIMARY
+@brand-success:          #97c60b;
+@brand-info:             @brand-primary;
+@brand-warning:          #fc9d21;
+@brand-danger:           #ff2e52;
 
-@bg-hover:               lighten(@brand-primary, 40%);
+@bg-hover:               #dff9f7;
 
 @disabled-opacity:       .3;
 
@@ -39,7 +39,7 @@
 //** Background color for `<body>`.
 @body-bg:               #fff;
 //** Global text color on `<body>`.
-@text-color:            @gray-dark;
+@text-color:            @gray-darker;
 @text-color-on-dark:    #788194;
 
 //** Global textual link color.
@@ -54,22 +54,22 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  "Open Sans", Arial, sans-serif;
+@font-family-sans-serif:  "Nunito Sans", "Open Sans", Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          14px;
+@font-size-base:          15px;
 @font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
 @font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
 
-@font-size-h1:            38px;
-@font-size-h2:            28px;
-@font-size-h3:            20px;
-@font-size-h4:            16px;
-@font-size-h5:            14px;
-@font-size-h6:            14px;
+@font-size-h1:            33px;
+@font-size-h2:            25px;
+@font-size-h3:            15px;
+@font-size-h4:            15px;
+@font-size-h5:            15px;
+@font-size-h6:            15px;
 
 //** Unit-less `line-height` for use in components like buttons.
 @line-height-base:        1.428571429; // 20/14
@@ -78,7 +78,7 @@
 
 //** By default, this inherits from the `<body>`.
 @headings-font-family:    inherit;
-@headings-font-weight:    600;
+@headings-font-weight:    700;
 @headings-line-height:    1.1;
 @headings-color:          inherit;
 
@@ -219,7 +219,7 @@
 @input-border-focus:             @brand-primary;
 
 //** Placeholder text color
-@input-color-placeholder:        @gray;
+@input-color-placeholder:        @gray-text;
 
 //** Default `.form-control` height
 @input-height-base:              (@line-height-computed + (@padding-base-vertical * 2) + 2);
