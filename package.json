@@ -1,7 +1,7 @@
 {
   "name": "@shore/bootstrap",
   "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
-  "version": "3.3.5-shore.69",
+  "version": "3.3.5-shore.70",
   "keywords": [
     "css",
     "less",
@@ -21,7 +21,6 @@
     "release": "npm version prerelease && npm run -s build-n-push && npm publish",
     "generate-shore-icons-less": "sed -e 1,13d shore-icons/styles.css > less/shore-icons.less",
     "fontastic-cleanup": "phantomjs bin/cleanup-font-mapping.js",
-
     "build:circleci": "npm run build",
     "postbuild:circleci": "cp -LRp test-page/ dist/test-page && rm -rf dist/test-page/less && cp dist/css/*.min.css dist/test-page/ && htmlprocessor dist/test-page/index.html -o dist/test-page/index.html -d package.json"
   },
