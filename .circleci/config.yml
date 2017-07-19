@@ -7,9 +7,9 @@ jobs:
     steps:
       - checkout
       - setup_remote_docker
-      -  run:
-          name: private npm login
-          command: echo -e "$NPM_USER\n$NPM_PASS\n$NPM_EMAIL" | npm login
+      # -  run:
+      #     name: private npm login
+      #     command: echo -e "$NPM_USER\n$NPM_PASS\n$NPM_EMAIL" | npm login
       - restore_cache:
           key: dependency-cache-{{ checksum "package.json" }}
       - run:
