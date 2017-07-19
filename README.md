@@ -1,5 +1,7 @@
 # THIS IS A CUSTOM VERSION OF BOOTSTRAP USED BY [SHORE](http://www.shore.com/)
 
+![Build Status](https://bamboo.shore.com/plugins/servlet/wittified/build-status/FE-BOOT)
+
 At Shore we create our own builds of Bootstrap. We do this for several reasons:
 
 * maintain our custom Shore theme

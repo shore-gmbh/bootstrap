@@ -1,5 +1,5 @@
 /*!
- * Bootstrap v3.3.5-shore.60 (http://getbootstrap.com)
+ * Bootstrap v3.3.5-shore.69 (http://getbootstrap.com)
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under the MIT license
  */
