@@ -80,11 +80,8 @@
   "files": [
     "dist",
     "fonts",
-    "grunt",
     "js/*.js",
-    "less/**/*.less",
-    "Gruntfile.js",
-    "LICENSE"
+    "less/**/*.less"
   ],
   "jspm": {
     "main": "js/bootstrap",
