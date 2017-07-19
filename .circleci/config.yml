@@ -30,8 +30,10 @@ jobs:
             # deployment to `current` folder (lucid caching)
             aws s3 sync dist/ s3://shore-review-apps/${CIRCLE_PROJECT_REPONAME}/${CIRCLE_BRANCH/\//-}/current/ --delete --cache-control 'public, max-age=31536000, no-cache'
       - deploy:
-          name: publish on npm
+          name: publish on npm (only on branch shore-bootstrap3)
           command: |
             if [ "${CIRCLE_BRANCH}" == "shore-bootstrap3" ]; then
               npm publish
+            else
+              echo "Nothing published!"
             fi
