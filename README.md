@@ -1,6 +1,6 @@
-# THIS IS A CUSTOM VERSION OF BOOTSTRAP USED BY [SHORE](http://www.shore.com/)
+[![CircleCI](https://circleci.com/gh/shore-gmbh/bootstrap.svg?style=svg)](https://circleci.com/gh/shore-gmbh/bootstrap)
 
-![Build Status](https://bamboo.shore.com/plugins/servlet/wittified/build-status/FE-BOOT)
+# THIS IS A CUSTOM VERSION OF BOOTSTRAP USED BY [SHORE](http://www.shore.com/)
 
 At Shore we create our own builds of Bootstrap. We do this for several reasons:
 
