@@ -9,7 +9,7 @@ At Shore we create our own builds of Bootstrap. We do this for several reasons:
 * add custom element styles
 * distribute as *npm* private module, so that we can easily use it in multiple projects to ensure a consistent brand experience
 
-Visit the [Shore Bootstrap Theme Test Page](http://shore-bootstrap-theme.surge.sh) hosted by awesome [surge.sh](https://surge.sh)!
+Visit the [Shore Bootstrap Theme Test Page](http://assets-cdn.shore.com/bootstrap/shore-bootstrap3/current/test-page/index.html) hosted on Shore CDN!
 
 ## Usage
 
