@@ -19,7 +19,6 @@
   white-space: nowrap;
   .button-size(9px; 18px; @font-size-base; 1.5; @btn-border-radius-base);
   .user-select(none);
-  min-width: 102px;
 
   &,
   &:active,
@@ -139,11 +138,11 @@
 .btn-sm {
   // line-height: ensure proper height of button next to small input
   .button-size(3px; 12px; @font-size-base; 1.5; @btn-border-radius-small);
-  min-width: auto;
+  min-width: auto !important;
 }
 .btn-xs {
   .button-size(@padding-xs-vertical; @padding-xs-horizontal; @font-size-small; @line-height-small; @btn-border-radius-small);
-  min-width: auto;
+  min-width: auto !important;
 }
 
 
