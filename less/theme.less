@@ -578,9 +578,9 @@ blockquote {
 
 // text input label
 .control-label {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: normal;
-  color: @gray;
+  color: @gray-text;
   margin-bottom: 0;
   .transition(~"color ease-in-out .15s");
 
@@ -655,6 +655,7 @@ blockquote {
 }
 
 // fix button default hover and active style
+.btn-mute,
 .btn-default {
   &.focus,
   &:focus,
@@ -667,24 +668,8 @@ blockquote {
   &:active:hover,
   &.active:hover,
   &:hover {
-    color: @brand-primary;
-    background-color: white;
-    border-color: @brand-primary;
-  }
-  &.active,
-  &:active,
-  &.focus.active,
-  &.focus:active,
-  &:focus.active,
-  &:focus:active {
-    &,
-    &:hover {
-      background-color: @bg-hover;
-    }
-  }
-  &.disabled, &[disabled] {
-    color: @btn-default-color !important;
-    background-color: @btn-default-bg !important;
+    color: darken(@brand-primary, 5%);
+    border-color: darken(@brand-primary, 5%);
   }
 }
 
