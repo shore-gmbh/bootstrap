@@ -599,6 +599,25 @@ blockquote {
   }
 }
 
+// floating text input label
+.floating-label-control {
+  position: relative;
+  padding-top: 12px;
+
+  .control-label {
+    position: absolute;
+    top: 0;
+    .transition(~"all ease-in-out .15s");
+  }
+
+  &:not(.has-value) {
+    .control-label {
+      font-size: inherit;
+      top: 19px;
+    }
+  }
+}
+
 // form text input
 .form-control {
   border-top: none;
