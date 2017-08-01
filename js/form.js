@@ -37,10 +37,22 @@
     }
   }
 
+  function initFloatingLabelContrlHasValue() {
+    var $floatingLabelFormGroups =
+      $(document).find('.form-group.floating-label-control');
+
+    $floatingLabelFormGroups.each(function (idx, el) {
+      var $input = $(el).find('.form-control');
+      if ($input.val()) $(el).addClass('has-value');
+    });
+  }
+
   $(document).on('focusin', handleFormControlHasFocusClassOnLabel('add'));
   $(document).on('focusout', handleFormControlHasFocusClassOnLabel('remove'));
 
   $(document).on('focusin', handleFloatingLabelControlHasValue('add'));
   $(document).on('focusout', handleFloatingLabelControlHasValue('remove'));
+
+  $(document).ready(initFloatingLabelContrlHasValue);
 }(jQuery);
 
