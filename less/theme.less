@@ -618,24 +618,6 @@ blockquote {
   }
 }
 
-.show-password-control {
-  position: absolute;
-  display: inline-block;
-  right: 0;
-  top: 22px;
-  cursor: pointer;
-  color: @text-muted;
-
-  .form-control:focus + & {
-    color: @brand-primary;
-  }
-
-  .has-error
-  .form-control + & {
-    color: @brand-danger;
-  }
-}
-
 // form text input
 .form-control {
   border-top: none;
@@ -651,9 +633,6 @@ blockquote {
     .opacity(.5);
   }
   padding: 6px 0;
-  &:has(show-password-control) {
-    position: relative;
-  }
 }
 .input-group-addon {
   border: none;
