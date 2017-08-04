@@ -13,7 +13,7 @@
       if (!$target.hasClass('form-control')) return;
       if (!$target.attr('id')) return;
 
-      $label = $('label[for=' + $target.attr('id') + ']');
+      $label = $('label[for="' + $target.attr('id') + '"]');
       if (!$label.length) return;
 
       $label[action + 'Class']('form-control-has-focus');
