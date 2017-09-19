@@ -33,6 +33,8 @@ jobs:
           name: publish on npm (only on branch shore-bootstrap3)
           command: |
             if [ "${CIRCLE_BRANCH}" == "shore-bootstrap3" ]; then
+              git config user.email "tech@shore.com"
+              git config user.name "Shore GmbH"
               npm publish
             else
               echo "Nothing published!"
