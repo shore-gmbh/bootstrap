@@ -60,11 +60,7 @@ npm run build
 
 ### Publishing on NPM
 
-This will be called by the CI server after `npm run build` only on branch `shore-bootstrap3`.
-
-```
-npm run publish
-```
+This has to be done locally by calling `npm publish`.
 
 What's happening:
 - bump version to 3.3.5-shore.(n+1)

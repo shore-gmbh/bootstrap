@@ -18,7 +18,7 @@
     "test-server": "live-server --open=test-page/index.html",
     "build": "grunt dist && cat dist/css/bootstrap.min.css dist/css/bootstrap-theme.min.css > dist/css/bootstrap-with-theme.min.css",
     "postbuild": "cp -LRp test-page/ dist/test-page && rm -rf dist/test-page/less && cp dist/css/*.min.css dist/test-page/ && htmlprocessor dist/test-page/index.html -o dist/test-page/index.html -d package.json",
-    "prepublishOnly": "npm version prerelease && git push origin shore-bootstrap3 && git push origin --tags",
+    "prepublishOnly": "npm version prerelease && git push && git push --tags",
     "generate-shore-icons-less": "sed -e 1,13d shore-icons/styles.css > less/shore-icons.less",
     "fontastic-cleanup": "phantomjs bin/cleanup-font-mapping.js"
   },
