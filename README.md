@@ -1,6 +1,6 @@
-# THIS IS A CUSTOM VERSION OF BOOTSTRAP USED BY [SHORE](http://www.shore.com/)
+[![CircleCI](https://circleci.com/gh/shore-gmbh/bootstrap.svg?style=svg)](https://circleci.com/gh/shore-gmbh/bootstrap)
 
-![Build Status](https://bamboo.shore.com/plugins/servlet/wittified/build-status/FE-BOOT)
+# THIS IS A CUSTOM VERSION OF BOOTSTRAP USED BY [SHORE](http://www.shore.com/)
 
 At Shore we create our own builds of Bootstrap. We do this for several reasons:
 
@@ -9,7 +9,7 @@ At Shore we create our own builds of Bootstrap. We do this for several reasons:
 * add custom element styles
 * distribute as *npm* private module, so that we can easily use it in multiple projects to ensure a consistent brand experience
 
-Visit the [Shore Bootstrap Theme Test Page](http://shore-bootstrap-theme.surge.sh) hosted by awesome [surge.sh](https://surge.sh)!
+Visit the [Shore Bootstrap Theme Test Page](http://assets-cdn.shore.com/bootstrap/shore-bootstrap3/current/test-page/index.html) hosted on Shore CDN!
 
 ## Usage
 
@@ -58,28 +58,17 @@ to open the theme test page and start hacking the less files. The test-server wi
 npm run build
 ```
 
-### Deploy test page of current build to surge.sh
+### Publishing on NPM
 
-Ensure you have been added as a collaborator, please ask the FE team.
-
-```
-npm run deploy-test-page
-```
-
-### Release
-
-Ensure you are logged in as user 'shore' to npm.
+This will be called by the CI server after `npm run build` only on branch `shore-bootstrap3`.
 
 ```
-npm run release
+npm run publish
 ```
 
 What's happening:
-- check publishing rights
 - bump version to 3.3.5-shore.(n+1)
-- run build
-- git add/commit/push
-- deploy test page to [surge.sh](http://shore-bootstrap-theme.surge.sh)
+- git push (with tags)
 - publish on [npm](https://www.npmjs.com/package/@shore/bootstrap)
 
 <hr>

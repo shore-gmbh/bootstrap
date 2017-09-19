@@ -1,7 +1,7 @@
 {
   "name": "@shore/bootstrap",
   "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
-  "version": "3.3.5-shore.69",
+  "version": "3.3.5-shore.75",
   "keywords": [
     "css",
     "less",
@@ -15,15 +15,10 @@
   "author": "Twitter, Inc.",
   "scripts": {
     "test": "grunt test",
-    "test:tap": "echo '1..1\nok 1 - no tests'",
-    "lint:tap": "echo '1..1\nok 1 - no linting'",
     "test-server": "live-server --open=test-page/index.html",
-    "ensure-surge-collaborator": "surge list|grep shore-bootstrap-theme.surge.sh || (echo 'ERR: you are currently not a collaborator, pls contact FE team!' && exit 1)",
-    "deploy-test-page": "cp -LRp test-page/ test-page-surge && rm -rf test-page-surge/less && cp dist/css/*.min.css test-page-surge/ && htmlprocessor test-page-surge/index.html -o test-page-surge/index.html -d package.json && surge test-page-surge shore-bootstrap-theme.surge.sh",
     "build": "grunt dist && cat dist/css/bootstrap.min.css dist/css/bootstrap-theme.min.css > dist/css/bootstrap-with-theme.min.css",
-    "build-n-push": "npm run -s build && git add dist && git commit -m 'add new build' && git push && git push --tags",
-    "prerelease": "npm run -s ensure-surge-collaborator",
-    "release": "npm version prerelease && npm run -s build-n-push && npm run -s deploy-test-page && npm publish",
+    "postbuild": "cp -LRp test-page/ dist/test-page && rm -rf dist/test-page/less && cp dist/css/*.min.css dist/test-page/ && htmlprocessor dist/test-page/index.html -o dist/test-page/index.html -d package.json",
+    "prepublishOnly": "npm version prerelease && git push && git push --tags",
     "generate-shore-icons-less": "sed -e 1,13d shore-icons/styles.css > less/shore-icons.less",
     "fontastic-cleanup": "phantomjs bin/cleanup-font-mapping.js"
   },
@@ -80,11 +75,8 @@
   "files": [
     "dist",
     "fonts",
-    "grunt",
     "js/*.js",
-    "less/**/*.less",
-    "Gruntfile.js",
-    "LICENSE"
+    "less/**/*.less"
   ],
   "jspm": {
     "main": "js/bootstrap",
